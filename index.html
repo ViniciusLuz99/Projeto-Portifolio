@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Este é o meu portfolio de desenvolvimento frontend, onde apresento meus projetos e habilidades em HTML, CSS e JavaScript. Explore meus projetos e entre em contato para serviços ou oportunidades de trabalho."
+    />
+    <meta
+      name="keywords"
+      content="palavras-chave, relevantes, para, a, página"
+    />
+    <meta name="author" content="Vinicius Luz" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.exemplo.com.br/pagina.html" />
+    <link rel="stylesheet" href="./Assets/Css/styles.css" />
+    <link rel="stylesheet" href="./Assets/Css/sidePanel.css" />
+    <title>Titulo da Página</title>
+  </head>
+  <body>
+    <div class="layout-container">
+      <header>
+        <nav>
+          <ul id="mySidepanel" class="sidepanel">
+            <li>
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </nav>
+        <h1>Titulo principal da página</h1>
+        <p>Descrição principal da página</p>
+      </header>
+      <main>
+        <section>
+          <h2>Titulo da seção</h2>
+          <p>Descrição breve da seção</p>
+        </section>
+      </main>
+      <footer>
+        <p>Contato: email@exemplo.com.br</p>
+        <p>Copyright © 2023</p>
+      </footer>
+    </div>
+    <script src="./Assets/Js/sidePanel.js"></script>
+  </body>
+</html>
