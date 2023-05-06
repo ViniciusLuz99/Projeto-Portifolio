@@ -16,12 +16,13 @@
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.exemplo.com.br/pagina.html" />
     <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-    crossorigin="anonymous"
-  />
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./Assets/Css/styles.css" />
+    <link rel="stylesheet" href="./Assets/Css/animations.css" />
     <link rel="stylesheet" href="./Assets/Css/sidePanel.css" />
     <title>Portfólio | Vinicius Luz</title>
   </head>
@@ -47,21 +48,26 @@
       <main id="main">
         <header
           id="mainHeader"
+          class="fadeInAnim"
           style="
             background-image: url('./Assets/img/backgrounds/CurveLine.svg');
           "
         >
           <section class="headerText">
-            <h1>Vinicius Luz</h1>
-            <h2>Web Developer</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque officiis dolores incidunt deserunt officia cum sit laboriosam pariatur quam ab fuga, voluptatum libero reiciendis enim et dolorum odit deleniti obcaecati!</p>
+            <h1 class="slideLeftFast">Vinicius Luz</h1>
+            <h2 class="slideLeftAnim">Web Developer</h2>
+            <p class="slideRightAnim">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              officiis dolores incidunt!
+            </p>
+            <img src="test.svg" alt="" />
           </section>
           <!--------------------------------------------------->
-          <div class="scroll">
-            <a href="#about" class="scroll-down"
-              ><span class="scroll-down-text">Role a pagina</span><br /><i
-                class="fa fa-chevron-down"
-              ></i
+          <div id="scroll">
+            <a href="#about" class="scroll-down bounceAnim"
+              ><span class="scroll-down-text bounceAnim opacityAnim"
+                >Role a pagina</span
+              ><br /><i class="fa fa-chevron-down bounceFastChangeColor"></i
             ></a>
           </div>
         </header>

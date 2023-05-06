@@ -5,12 +5,13 @@
 /*Root*/
 :root {
   /* Cores */
-  --primary-color: #ff6b6b;
-  --secondary-color: #48dbfb;
-  --tertiary-color: #feca57;
-  --quaternary-color: #a29bfe;
+  --primary-color: #ff33cc; /* rosa neon */
+  --secondary-color: #00ccff; /* azul neon */
+  --tertiary-color: #ffcc00; /* amarelo neon */
+  --quaternary-color: #9900ff; /* roxo neon */
+  
   /*Neon shadow*/
-  --neon-primary-color: 0 4px 8px #ff6b6b67;
+  --neon-primary-color: 0 4px 8px #ff33cc88;
 
   --dark-background-strong: #141414;
   --dark-background-medium: #282828;
@@ -95,7 +96,6 @@ a {
   text-decoration: none;
   text-shadow: var(--text-shadow-P);
 }
-
 /*Layout*/
 .layout-container {
   display: flex;
@@ -105,9 +105,24 @@ a {
   min-height: 100vh;
   width: 100%;
 }
+
+.centerAll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 /*
 Estilos da pagina
 */
+nav {
+  box-shadow: 0 0 19px var(--secondary-color);
+  height: 3rem;
+  background-color: #111111;)
+}
+
+
 #mainHeader {
   display: flex;
   flex-direction: column;
@@ -118,101 +133,48 @@ Estilos da pagina
   background-size: cover; /*hero img*/
   background-repeat: no-repeat;
   background-position: center center;
+  border-top:1px solid var(--secondary-color);
 }
 .headerText {
   color: #fff;
-  text-align: left;
+  text-align: center;
   align-self: center;
-  max-width: 800px;
+  max-width: 400px;
   margin: 6%;
 }
 
 .headerText h1 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
 }
-.headerText h2, .headerText p{
-  margin-left: 8px;
-}
+
 .headerText h2 {
   margin-top: -15px;
   font-size: 2.3rem;
   color: var(--primary-color);
-  animation: change-color 10s ease-in-out infinite;
-  -webkit-animation: change-color 10s ease-in-out infinite;
 }
-
+.headerText p{
+ font-size: 0.9rem;
+}
 /*Scroll*/
-.scroll {
+#scroll {
   text-align: center;
   position: absolute;
   bottom: 3rem;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
-.scroll .scroll-down {
+#scroll .scroll-down {
   display: block;
   color: var(--white-1);
-  animation: bounce 3s infinite;
-  -webkit-animation: bounce 3s infinite;
 }
 
-.scroll .scroll-down .scroll-down-text {
+#scroll .scroll-down .scroll-down-text {
   font-size: 1.2rem;
   transition: all 0.1s ease-in-out;
-  animation: bounce 0.8s infinite, opacity 5s ease-in-out infinite;
-  -webkit-animation: bounce 0.8s infinite, opacity 5s ease-in-out infinite;
-}
-@keyframes opacity {
-  0% {
-    opacity: 5%;
-  }
-  10% {
-    opacity: 10%;
-  }
-  25% {
-    opacity: 50%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 10%;
-  }
 }
 
 .scroll-down i {
   font-size: 2.5rem;
   color: var(--primary-color);
-  animation: bounce 1s infinite, change-color 5s ease-in-out infinite;
-}
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes change-color {
-  0% {
-    color: var(--primary-color);
-  }
-  25% {
-    color: var(--secondary-color);
-  }
-  50% {
-    color: var(--tertiary-color);
-  }
-  75% {
-    color: var(--quaternary-color);
-  }
-  100% {
-    color: var(--primary-color);
-  }
 }
 
 #aboutMe {
@@ -228,6 +190,11 @@ Estilos da pagina
   /*header*/
   .headerText {
     align-self: flex-start;
+    text-align: left;
+  }
+  .headerText h2,
+  .headerText p {
+    margin-left: 8px;
   }
   /*scroll*/
   .scroll-down i {
