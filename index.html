@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Este é o meu portfolio de desenvolvimento frontend, onde apresento meus projetos e habilidades em HTML, CSS e JavaScript. Explore meus projetos e entre em contato para serviços ou oportunidades de trabalho."
+      content="Este é o meu portfólio de desenvolvimento frontend, onde apresento meus projetos e habilidades em HTML, CSS e JavaScript. Explore meus projetos e entre em contato para serviços ou me oferecer oportunidades de trabalho."
     />
     <meta
       name="keywords"
@@ -15,13 +15,19 @@
     <meta name="author" content="Vinicius Luz" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.exemplo.com.br/pagina.html" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" href="./Assets/Css/styles.css" />
     <link rel="stylesheet" href="./Assets/Css/sidePanel.css" />
-    <title>Titulo da Página</title>
+    <title>Portfólio | Vinicius Luz</title>
   </head>
   <body>
     <div class="layout-container">
-      <header>
+      <header id="headerNav">
         <nav>
           <ul id="mySidepanel" class="sidepanel">
             <li>
@@ -36,15 +42,38 @@
           </ul>
           <button class="openbtn" onclick="openNav()">&#9776;</button>
         </nav>
-        <h1>Titulo principal da página</h1>
-        <p>Descrição principal da página</p>
       </header>
-      <main>
+      <!--------------------------------------------------->
+      <main id="main">
+        <header
+          id="mainHeader"
+          style="
+            background-image: url('./Assets/img/backgrounds/CurveLine.svg');
+          "
+        >
+          <section class="headerText">
+            <h1>Vinicius Luz</h1>
+            <h2>Web Developer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque officiis dolores incidunt deserunt officia cum sit laboriosam pariatur quam ab fuga, voluptatum libero reiciendis enim et dolorum odit deleniti obcaecati!</p>
+          </section>
+          <!--------------------------------------------------->
+          <div class="scroll">
+            <a href="#about" class="scroll-down"
+              ><span class="scroll-down-text">Role a pagina</span><br /><i
+                class="fa fa-chevron-down"
+              ></i
+            ></a>
+          </div>
+        </header>
+        <!--------------------------------------------------->
         <section>
           <h2>Titulo da seção</h2>
           <p>Descrição breve da seção</p>
         </section>
       </main>
+      <!--------------------------------------------------->
+      <main id="aboutMe"></main>
+      <!--------------------------------------------------->
       <footer>
         <p>Contato: email@exemplo.com.br</p>
         <p>Copyright © 2023</p>

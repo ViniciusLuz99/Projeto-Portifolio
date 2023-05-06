@@ -5,10 +5,12 @@
 /*Root*/
 :root {
   /* Cores */
-  --primary-color: #007bff;
-  --secondary-color: #65b6d5;
-  --tertiary-color: #1d2032;
-  --quaternary-color: #dc3545;
+  --primary-color: #ff6b6b;
+  --secondary-color: #48dbfb;
+  --tertiary-color: #feca57;
+  --quaternary-color: #a29bfe;
+  /*Neon shadow*/
+  --neon-primary-color: 0 4px 8px #ff6b6b67;
 
   --dark-background-strong: #141414;
   --dark-background-medium: #282828;
@@ -67,12 +69,16 @@ Esses estilos são aplicados a todos os tamanhos de tela, incluindo dispositivos
 e desktops. Eles fornecem um estilo básico para elementos HTML, como fontes, cores e
 margens/padding.
 */
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: var(--fonte-corpo);
-  font-size: 16px;
   color: var(--white-2);
   background-color: var(--dark-background-strong);
 }
+
 h1,
 h2,
 h3,
@@ -102,32 +108,150 @@ a {
 /*
 Estilos da pagina
 */
+#mainHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 3em);
+  background-size: cover; /*hero img*/
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.headerText {
+  color: #fff;
+  text-align: left;
+  align-self: center;
+  max-width: 800px;
+  margin: 6%;
+}
 
+.headerText h1 {
+  font-size: 3.5rem;
+}
+.headerText h2, .headerText p{
+  margin-left: 8px;
+}
+.headerText h2 {
+  margin-top: -15px;
+  font-size: 2.3rem;
+  color: var(--primary-color);
+  animation: change-color 10s ease-in-out infinite;
+  -webkit-animation: change-color 10s ease-in-out infinite;
+}
+
+/*Scroll*/
+.scroll {
+  text-align: center;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll .scroll-down {
+  display: block;
+  color: var(--white-1);
+  animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+}
+
+.scroll .scroll-down .scroll-down-text {
+  font-size: 1.2rem;
+  transition: all 0.1s ease-in-out;
+  animation: bounce 0.8s infinite, opacity 5s ease-in-out infinite;
+  -webkit-animation: bounce 0.8s infinite, opacity 5s ease-in-out infinite;
+}
+@keyframes opacity {
+  0% {
+    opacity: 5%;
+  }
+  10% {
+    opacity: 10%;
+  }
+  25% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 10%;
+  }
+}
+
+.scroll-down i {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  animation: bounce 1s infinite, change-color 5s ease-in-out infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes change-color {
+  0% {
+    color: var(--primary-color);
+  }
+  25% {
+    color: var(--secondary-color);
+  }
+  50% {
+    color: var(--tertiary-color);
+  }
+  75% {
+    color: var(--quaternary-color);
+  }
+  100% {
+    color: var(--primary-color);
+  }
+}
+
+#aboutMe {
+  display: none;
+}
 /*Media Queries Desktop, tablets, Tvs...*/
 /* Estilos para tablets*/
 @media screen and (min-width: 768px) {
-  body {
+  html {
     font-size: 18px;
+  }
+
+  /*header*/
+  .headerText {
+    align-self: flex-start;
+  }
+  /*scroll*/
+  .scroll-down i {
+    font-size: 1.5rem;
   }
 }
 
 /* Estilos para desktops */
 @media only screen and (min-width: 1024px) {
-  body {
+  html {
     font-size: 20px;
   }
 }
 
 /* Estilos para widescreen */
 @media only screen and (min-width: 1440px) {
-  body {
+  html {
     font-size: 22px;
   }
 }
 
 /* Estilos para telas ultrawide */
 @media only screen and (min-width: 2560px) {
-  body {
+  html {
     font-size: 26px;
   }
 }
