@@ -163,6 +163,12 @@ Estilos da pagina
 
 .headerText h1 {
   font-size: 3.2rem;
+  text-shadow:/*  0 5px 2px var(--neon-primary-color), */ 1px 2px 1px      var(--primary-color),    -1px -2px 1px var(--secondary-color);
+}
+
+.glitch-effect {
+  animation: glitch 1s infinite;
+  -webkit-animation: glitch 1s infinite;
 }
 
 .headerText h2 {

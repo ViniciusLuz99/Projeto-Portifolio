@@ -8,21 +8,21 @@
   }
 }
 
-@keyframes slide-in-right{
+@keyframes slide-in-right {
   from {
     transform: translateX(100%);
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
     -o-transform: translateX(100%);
-}
+  }
   to {
     transform: translateX(0);
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
-}
+  }
 }
 
 @keyframes change-color {
@@ -84,28 +84,43 @@
 
 @keyframes glitch {
   0% {
-    text-shadow: 1px 1px 1px #ff00e980,
-      -3px -1px 1px #00f2ff80;
+    text-shadow: 1px 1px 1px #ff00e980, -3px -1px 1px #00f2ff80;
   }
   20% {
-    text-shadow: 1px 2px 1px #00f3ff80,
-      -3px -1px 1px #ff00e980;
+    text-shadow: 1px 2px 1px #00f3ff80, -3px -1px 1px #ff00e980;
   }
   40% {
-    text-shadow: 3px 2px 1px #ff00e980,
-      -1px -1px 1px #00f3ff80;
+    text-shadow: 3px 2px 1px #ff00e980, -1px -1px 1px #00f3ff80;
   }
   60% {
-    text-shadow: 3px 1px 1px #00f3ff80,
-      -1px -1px 1px #ff00e980;
+    text-shadow: 3px 1px 1px #00f3ff80, -1px -1px 1px #ff00e980;
   }
   80% {
-    text-shadow: 1px 1px 1px #ff00e980,
-      -1px -1px 1px #00f3ff80;
+    text-shadow: 1px 1px 1px #ff00e980, -1px -1px 1px #00f3ff80;
   }
   100% {
-    text-shadow: 1px 1px 1px #00f3ff80,
-      -1px -1px 1px #ff00e980;
+    text-shadow: 1px 1px 1px #00f3ff80, -1px -1px 1px #ff00e980;
+  }
+}
+
+@keyframes glitchBox {
+  0% {
+    box-shadow: 1px 1px 1px #ff00e980, -3px -1px 1px #00f2ff80;
+  }
+  20% {
+    box-shadow: 1px 2px 1px #00f3ff80, -3px -1px 1px #ff00e980;
+  }
+  40% {
+    box-shadow: 3px 2px 1px #ff00e980, -1px -1px 1px #00f3ff80;
+  }
+  60% {
+    box-shadow: 3px 1px 1px #00f3ff80, -1px -1px 1px #ff00e980;
+  }
+  80% {
+    box-shadow: 1px 1px 1px #ff00e980, -1px -1px 1px #00f3ff80;
+  }
+  100% {
+    box-shadow: 1px 1px 1px #00f3ff80, -1px -1px 1px #ff00e980;
   }
 }
 
@@ -155,13 +170,24 @@
   -webkit-animation: glitch 1s infinite;
 }
 
+.glitchAnimBox {
+  animation: glitchBox 1s infinite;
+  -webkit-animation: glitchBox 1s infinite;
+}
+
 /* Other styles... */
 .slideLeftChangeColor {
   animation: slide-in-left 3s ease-out, change-color 10s ease-in-out infinite;
-  -webkit-animation: slide-in-left 3s ease-out, change-color 10s ease-in-out infinite;
+  -webkit-animation: slide-in-left 3s ease-out,
+    change-color 10s ease-in-out infinite;
 }
 
 .bounceFastChangeColor {
   animation: bounce 0.9s infinite, change-color 10s ease-in-out infinite;
   -webkit-animation: bounce 0.9s infinite, change-color 10s ease-in-out infinite;
+}
+
+.slideLefglitchAnim {
+  animation: slide-in-left 3s ease-out, glitch 0.9s infinite;
+  -webkit-animation: slide-in-left 3s ease-out, glitch 0.9s infinite;
 }
