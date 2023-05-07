@@ -9,9 +9,9 @@
   --secondary-color: #00ccff; /* azul neon */
   --tertiary-color: #ffcc00; /* amarelo neon */
   --quaternary-color: #9900ff; /* roxo neon */
-  
+
   /*Neon shadow*/
-  --neon-primary-color: 0 4px 8px #ff33cc88;
+  --neon-primary-color: #ff33cc96;
 
   --dark-background-strong: #141414;
   --dark-background-medium: #282828;
@@ -119,9 +119,8 @@ Estilos da pagina
 nav {
   box-shadow: 0 0 19px var(--secondary-color);
   height: 3rem;
-  background-color: #111111;)
+  background-color: #111111;
 }
-
 
 #mainHeader {
   display: flex;
@@ -133,7 +132,7 @@ nav {
   background-size: cover; /*hero img*/
   background-repeat: no-repeat;
   background-position: center center;
-  border-top:1px solid var(--secondary-color);
+  border-top: 1px solid var(--secondary-color);
 }
 .headerText {
   color: #fff;
@@ -145,15 +144,19 @@ nav {
 
 .headerText h1 {
   font-size: 3.2rem;
+  text-shadow: 0 5px 5px var(--neon-primary-color),
+    1px 1px 1px var(--primary-color);
 }
 
 .headerText h2 {
   margin-top: -15px;
   font-size: 2.3rem;
   color: var(--primary-color);
+  text-shadow: 0 0 8px var(--neon-primary-color);
 }
-.headerText p{
- font-size: 0.9rem;
+.headerText p {
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 1px var(--quaternary-color);
 }
 /*Scroll*/
 #scroll {
