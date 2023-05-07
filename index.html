@@ -29,7 +29,12 @@
   <body>
     <div class="layout-container">
       <header id="headerNav">
-        <nav>
+        <nav id="nav">
+          <div class="navLogo centerAll">
+            <img src="https://via.placeholder.com/100x50" alt="" />
+          </div>
+          <button class="openbtn" onclick="openNav()">&#9776;</button>
+          <!--menu-closed by default-->
           <ul id="mySidepanel" class="sidepanel">
             <li>
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
@@ -39,9 +44,10 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Clients</a></li>
-            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="#contact"><strong>Contato</strong></a>
+            </li>
           </ul>
-          <button class="openbtn" onclick="openNav()">&#9776;</button>
         </nav>
       </header>
       <!--------------------------------------------------->

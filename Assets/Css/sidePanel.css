@@ -5,26 +5,25 @@
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0;
-  right: 0;
+  right: 0; /* Put to right */
   background-color: #111111af; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
 }
 
-/* The sidepanel links */
+/* Sidepanel links */
 .sidepanel a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 1.5rem;
-  color: #e9e0e0;
+  color: var(--white-1);
   display: block;
-  transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidepanel a:hover {
-  color: #c91d1d;
+  color: var(--primary-color);
 }
 
 /* Position and style the close button (top right corner) */
@@ -40,13 +39,18 @@
 /* Style the button that is used to open the sidepanel */
 .openbtn {
   font-size: 1.5rem;
-  cursor: pointer;
-  background-color: #111;
   color: white;
+  background-color: transparent;
+  cursor: pointer;
   padding: 10px 15px;
   border: none;
+  border-radius: 10px;
 }
 
 .openbtn:hover {
-  background-color: #444;
+  background-color: var(--primary-color);
+}
+/* Transition */
+.openbtn:hover, .sidepanel a {
+  transition: 0.3s;
 }

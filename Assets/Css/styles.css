@@ -12,7 +12,8 @@
 
   /*Neon shadow*/
   --neon-primary-color: #ff33cc96;
-
+  --neon-quaternary-color: #9900ff96;
+  --dark-background-strongDark: #131313;
   --dark-background-strong: #141414;
   --dark-background-medium: #282828;
   --dark-background-soft: #333333;
@@ -116,12 +117,31 @@ a {
 /*
 Estilos da pagina
 */
-nav {
-  box-shadow: 0 0 19px var(--secondary-color);
-  height: 3rem;
-  background-color: #111111;
+/*Navbar*/
+#headerNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 3em;
+}
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 40px;
+  background-color: var(--dark-background-strongDark);
+  border-top: 1px solid var(--secondary-color);
+  box-shadow: 0 0 30px var(--black-1), 0 0 5px var(--neon-quaternary-color);
+  position: fixed;
+}
+.navLogo {
+  max-height: 10px;
+  margin: 0 10px;
 }
 
+/*Hero Section*/
 #mainHeader {
   display: flex;
   flex-direction: column;
@@ -132,7 +152,6 @@ nav {
   background-size: cover; /*hero img*/
   background-repeat: no-repeat;
   background-position: center center;
-  border-top: 1px solid var(--secondary-color);
 }
 .headerText {
   color: #fff;
@@ -144,8 +163,6 @@ nav {
 
 .headerText h1 {
   font-size: 3.2rem;
-  text-shadow: 0 5px 5px var(--neon-primary-color),
-    1px 1px 1px var(--primary-color);
 }
 
 .headerText h2 {
