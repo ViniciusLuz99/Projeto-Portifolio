@@ -124,6 +124,24 @@
   }
 }
 
+@keyframes neonBox {
+  0% {
+    box-shadow: 0 0 30px var(--black-1), 0 0 5px var(--neon-quaternary-color);
+  }
+  25% {
+    box-shadow: 0 0 32px var(--black-1), 0 0 10px var(--neon-quaternary-color);
+  }
+  50% {
+    box-shadow: 0 0 35px var(--black-1), 0 0 20px var(--neon-quaternary-color);
+  }
+  75% {
+    box-shadow: 0 0 32px var(--black-1), 0 0 10px var(--neon-quaternary-color);
+  }
+  100% {
+    box-shadow: 0 0 30px var(--black-1), 0 0 5px var(--neon-quaternary-color);
+  }
+}
+
 /* Animations */
 .slideLeftAnim {
   animation: slide-in-left 3s ease-out;
@@ -175,6 +193,11 @@
   -webkit-animation: glitchBox 1s infinite;
 }
 
+.neonBox {
+  animation: neonBox 3s ease-in-out infinite;
+  -webkit-animation: neonBox 3s ease-in-out infinite;
+}
+
 /* Other styles... */
 .slideLeftChangeColor {
   animation: slide-in-left 3s ease-out, change-color 10s ease-in-out infinite;
@@ -190,4 +213,9 @@
 .slideLefglitchAnim {
   animation: slide-in-left 3s ease-out, glitch 0.9s infinite;
   -webkit-animation: slide-in-left 3s ease-out, glitch 0.9s infinite;
+}
+
+.glitchAnimHover a:hover{
+  animation: glitch 2s infinite;
+  -webkit-animation: glitch 2s infinite;
 }

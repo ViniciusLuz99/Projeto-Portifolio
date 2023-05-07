@@ -12,6 +12,7 @@
 
   /*Neon shadow*/
   --neon-primary-color: #ff33cc96;
+  --neon-secondary-color: #00ccff96;
   --neon-quaternary-color: #9900ff96;
   --dark-background-strongDark: #131313;
   --dark-background-strong: #141414;
@@ -131,14 +132,15 @@ Estilos da pagina
   align-items: center;
   width: 100%;
   min-height: 40px;
-  background-color: var(--dark-background-strongDark);
-  border-top: 1px solid var(--secondary-color);
-  box-shadow: 0 0 30px var(--black-1), 0 0 5px var(--neon-quaternary-color);
+  background-color: #141414ad;
+  border-top: 1px solid var(--neon-secondary-color);
+  border-bottom: 1px solid var(--neon-primary-color);
   position: fixed;
+  padding: 0 10px;
 }
 .navLogo {
   max-height: 10px;
-  margin: 0 10px;
+  margin: 0;
 }
 
 /*Hero Section*/
@@ -163,7 +165,9 @@ Estilos da pagina
 
 .headerText h1 {
   font-size: 3.2rem;
-  text-shadow:/*  0 5px 2px var(--neon-primary-color), */ 1px 2px 1px      var(--primary-color),    -1px -2px 1px var(--secondary-color);
+  text-shadow:/*  0 5px 2px var(--neon-primary-color), */ 1px 2px 1px
+      var(--primary-color),
+    -1px -2px 1px var(--secondary-color);
 }
 
 .glitch-effect {
