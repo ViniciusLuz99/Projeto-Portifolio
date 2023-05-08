@@ -155,6 +155,23 @@ Estilos da pagina
   background-repeat: no-repeat;
   background-position: center center;
 }
+.headerTextLogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+/*!!falta terminar, faltando alinhar a imagem ao centro, faltando retirala no modo mobile ou seja colocando ela pra ser ativada no */
+.headerLogo {
+  display: none;
+}
+.headerLogo img {
+  display: block;
+  width: 80%;
+}
+
 .headerText {
   color: #fff;
   text-align: center;
@@ -237,18 +254,27 @@ Estilos da pagina
   html {
     font-size: 20px;
   }
+  /*header*/
+  .headerLogo {
+    display: block;
+    max-width: 400px;
+    align-self: center;
+  }
+  .headerLogo img {
+    width: 80%;
+  }
 }
 
 /* Estilos para widescreen */
 @media only screen and (min-width: 1440px) {
   html {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 /* Estilos para telas ultrawide */
 @media only screen and (min-width: 2560px) {
   html {
-    font-size: 26px;
+    font-size: 20px;
   }
 }
