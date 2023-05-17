@@ -84,43 +84,43 @@
 
 @keyframes glitch {
   0% {
-    text-shadow: 1px 1px 1px #ff00e980, -3px -1px 1px #00f2ff80;
+    text-shadow: 2px 1px 1px #ff00ea48, -3px -1px 1px #00f3ff48;
   }
   20% {
-    text-shadow: 1px 2px 1px #00f3ff80, -3px -1px 1px #ff00e980;
+    text-shadow: 2px 1px 1px #00f3ff48, -3px -1px 1px #ff00ea48;
   }
   40% {
-    text-shadow: 3px 2px 1px #ff00e980, -1px -1px 1px #00f3ff80;
+    text-shadow: 1px 2px 1px #ff00ea48, -1px -1px 1px #00f3ff48;
   }
   60% {
-    text-shadow: 3px 1px 1px #00f3ff80, -1px -1px 1px #ff00e980;
+    text-shadow: 3px 1px 1px #00f3ff48, -2px -1px 1px #ff00ea48;
   }
   80% {
-    text-shadow: 1px 1px 1px #ff00e980, -1px -1px 1px #00f3ff80;
+    text-shadow: 1px 1px 1px #ff00ea48, -1px -1px 1px #00f3ff48;
   }
   100% {
-    text-shadow: 1px 1px 1px #00f3ff80, -1px -1px 1px #ff00e980;
+    text-shadow: 1px 1px 1px #00f3ff48, -1px -1px 1px #ff00ea48;
   }
 }
 
 @keyframes glitchBox {
   0% {
-    box-shadow: 1px 1px 1px #ff00e980, -3px -1px 1px #00f2ff80;
+    box-shadow: 1px 1px 1px #ff00ea48, -3px -1px 1px #00f3ff48;
   }
   20% {
-    box-shadow: 1px 2px 1px #00f3ff80, -3px -1px 1px #ff00e980;
+    box-shadow: 1px 2px 1px #00f3ff48, -3px -1px 1px #ff00ea48;
   }
   40% {
-    box-shadow: 3px 2px 1px #ff00e980, -1px -1px 1px #00f3ff80;
+    box-shadow: 3px 2px 1px #ff00ea48, -1px -1px 1px #00f3ff48;
   }
   60% {
-    box-shadow: 3px 1px 1px #00f3ff80, -1px -1px 1px #ff00e980;
+    box-shadow: 3px 1px 1px #00f3ff48, -1px -1px 1px #ff00ea48;
   }
   80% {
-    box-shadow: 1px 1px 1px #ff00e980, -1px -1px 1px #00f3ff80;
+    box-shadow: 1px 1px 1px #ff00ea48, -1px -1px 1px #00f3ff48;
   }
   100% {
-    box-shadow: 1px 1px 1px #00f3ff80, -1px -1px 1px #ff00e980;
+    box-shadow: 1px 1px 1px #00f3ff48, -1px -1px 1px #ff00ea48;
   }
 }
 
@@ -211,8 +211,8 @@
 }
 
 .slideLefglitchAnim {
-  animation: slide-in-left 3s ease-out, glitch 0.9s infinite;
-  -webkit-animation: slide-in-left 3s ease-out, glitch 0.9s infinite;
+  animation: slide-in-left 3s ease-out, glitch 2s infinite;
+  -webkit-animation: slide-in-left 3s ease-out, glitch 2s infinite;
 }
 
 .glitchAnimHover a:hover{

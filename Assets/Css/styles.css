@@ -122,29 +122,35 @@ Estilos da pagina
 #headerNav {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 3em;
-}
-#nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  min-height: 40px;
-  background-color: #141414ad;
+  min-height: 50px;
+  background-color: #111111ad;
   border-top: 1px solid var(--neon-secondary-color);
   border-bottom: 1px solid var(--neon-primary-color);
   position: fixed;
-  padding: 0 10px;
+}
+#nav {
+  /*outline: 1px solid red;*/
+  display: flex;
+  height: 3em;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
 }
 .navLogo {
-  max-height: 10px;
-  margin: 0;
+  margin: 1px;
+}
+.navLogo img {
+  display: block;
 }
 
 /*Hero Section*/
 #mainHeader {
+  /*outline: 1px solid red;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,28 +162,30 @@ Estilos da pagina
   background-position: center center;
 }
 .headerTextLogo {
+  /*outline: 1px solid red;*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
-/*!!falta terminar, faltando alinhar a imagem ao centro, faltando retirala no modo mobile ou seja colocando ela pra ser ativada no */
-.headerLogo {
+
+/* .headerLogo {
   display: none;
 }
 .headerLogo img {
   display: block;
   width: 80%;
-}
+} */
 
 .headerText {
+  /*outline: 1px solid red;*/
   color: #fff;
   text-align: center;
   align-self: center;
+  margin: 0 auto;
   max-width: 400px;
-  margin: 6%;
 }
 
 .headerText h1 {
@@ -204,6 +212,7 @@ Estilos da pagina
 }
 /*Scroll*/
 #scroll {
+  /*outline: 1px solid red;*/
   text-align: center;
   position: absolute;
   bottom: 3rem;
@@ -215,11 +224,13 @@ Estilos da pagina
 }
 
 #scroll .scroll-down .scroll-down-text {
+  /*outline: 1px solid red;*/
   font-size: 1.2rem;
   transition: all 0.1s ease-in-out;
 }
 
 .scroll-down i {
+  /*outline: 1px solid red;*/
   font-size: 2.5rem;
   color: var(--primary-color);
 }
@@ -233,11 +244,14 @@ Estilos da pagina
   html {
     font-size: 18px;
   }
-
-  /*header*/
+  /*headerHero*/
+  #mainHeader {
+    height: 100vh;
+  }
   .headerText {
     align-self: flex-start;
     text-align: left;
+    margin: 0;
   }
   .headerText h2,
   .headerText p {
@@ -255,14 +269,15 @@ Estilos da pagina
     font-size: 20px;
   }
   /*header*/
-  .headerLogo {
+  /* .headerLogo {
     display: block;
     max-width: 400px;
     align-self: center;
   }
   .headerLogo img {
     width: 80%;
-  }
+  } */
+  
 }
 
 /* Estilos para widescreen */
@@ -278,3 +293,5 @@ Estilos da pagina
     font-size: 20px;
   }
 }
+
+
