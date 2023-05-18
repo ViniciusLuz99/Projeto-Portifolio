@@ -141,6 +141,20 @@ Estilos da pagina
   width: 90%;
   max-width: 1000px;
 }
+/*/*/
+.navLanguage a {
+  /* outline: 1px solid red; */
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: var(--dark-background-strong);
+  gap: 10px;
+  font-size: 1rem;
+}
+.navLanguage img {
+  width: 1.4rem;
+}
+/*/*/
 .navLogo {
   margin: 1px;
 }
@@ -237,13 +251,14 @@ Estilos da pagina
   width: 2.5rem;
   height: 2.5rem;
   background-color: var(--black-1);
-  padding: 5px;
+  padding: 8px;
   margin: 5px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid;
   font-size: 1.6rem;
 }
 .headerIcons a,
@@ -252,11 +267,9 @@ Estilos da pagina
   transition: 0.3s ease-in-out;
 }
 .headerIcons a:hover {
-  /*color: var(--primary-color);
-  */ /*text-shadow: 2px 2px 1px var(--primary-color),    -2px -2px 1px var(--secondary-color);
-  */
-  box-shadow: 2px 1px 1px var(--primary-color),
-    -2px -1px 1px var(--secondary-color);
+  border-color: var(--primary-color);
+  box-shadow: 3px 1px 3px var(--primary-color),
+    -3px -1px 3px var(--secondary-color);
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
@@ -287,6 +300,7 @@ Estilos da pagina
   font-size: 2.5rem;
   color: white;
 }
+/*/*/
 
 #aboutMe {
   display: none;
