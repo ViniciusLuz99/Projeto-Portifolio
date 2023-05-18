@@ -26,20 +26,27 @@
     <link rel="stylesheet" href="./Assets/Css/sidePanel.css" />
     <title>Portfólio | Vinicius Luz</title>
   </head>
+  <!--Animações-->
+  <!--Class= fadeInAnim slideLeftFast slideLefglitchAnim slideLeftFast glitchAnimHover-->
+  <!---->
   <body>
     <div class="layout-container">
       <header id="headerNav" class="neonBox">
-        <nav id="nav">
+        <nav id="nav" class="fadeInAnim">
           <section class="navLogo">
-            <img src="https://via.placeholder.com/100x50" alt="" />
+            <a href="/"><span>/*</span>VINILUZ DEV<span>*/</span></a>
+            <!-- <img src="https://via.placeholder.com/100x50" alt="" /> -->
           </section>
           <!---->
-          <section>
+          <aside>
             <button class="openbtn" onclick="openNav()">&#9776;</button>
             <!--menu-closed by default-->
-            <ul id="mySidepanel" class="sidepanel glitchAnimHover">
+            <ul id="mySidepanel" class="sidepanel">
               <li>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                <a
+                  href="javascript:void(0)"
+                  class="closebtn"
+                  onclick="closeNav()"
                   >&times;</a
                 >
               </li>
@@ -50,7 +57,7 @@
                 <a href="#contact"><strong>Contato</strong></a>
               </li>
             </ul>
-          </section>
+          </aside>
         </nav>
       </header>
       <!--------------------------------------------------->
@@ -65,11 +72,18 @@
           <div class="headerTextLogo">
             <section class="headerText">
               <h1 class="slideLeftFast">Vinicius Luz</h1>
-              <h2 class="slideLefglitchAnim">Web Developer</h2>
-              <p class="slideRightAnim">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                officiis dolores incidunt!
-              </p>
+              <h2 class="slideLeftAnim">Desenvolvedor Web</h2>
+              <div class="headerIcons slideLeftFast">
+                <a href="" class="headerSocialIcons"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="" class="headerSocialIcons slideLeftFast"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="" class="headerSocialIcons"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
             </section>
             <!-- <section class="headerLogo">
               <img
@@ -83,7 +97,7 @@
             <a href="#about" class="scroll-down bounceAnim"
               ><span class="scroll-down-text bounceAnim opacityAnim"
                 >Role a pagina</span
-              ><br /><i class="fa fa-chevron-down bounceFastChangeColor"></i
+              ><br /><i class="fa fa-chevron-down bounceFastGlitch"></i
             ></a>
           </div>
         </header>

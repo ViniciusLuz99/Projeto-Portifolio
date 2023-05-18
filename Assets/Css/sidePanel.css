@@ -25,7 +25,10 @@
 
 /* hover change their color */
 .sidepanel a:hover {
-  color: var(--primary-color);
+  color: var(--white-2);
+  text-shadow: 2px 1px 1px var(--primary-color),
+  -2px -1px 1px var(--secondary-color);
+  text-decoration: underline var(--primary-color);
 }
 
 /* Position and style the close button (top right corner) */
@@ -50,10 +53,13 @@
 }
 
 .openbtn:hover {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  text-shadow: 3px 1px 1px var(--primary-color),
+  -4px -1px 1px var(--secondary-color);
 }
 /* Transition */
 .openbtn:hover,
+.sidepanel a:hover,
 .sidepanel a,
 .openbtn {
   transition: 0.3s;

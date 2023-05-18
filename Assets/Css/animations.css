@@ -81,25 +81,26 @@
     opacity: 1;
   }
 }
-
+/* 3px 1px 1px var(--primary-color),
+  -4px -1px 1px var(--secondary-color); */
 @keyframes glitch {
-  0% {
-    text-shadow: 2px 1px 1px #ff00ea48, -3px -1px 1px #00f3ff48;
+  0% { 
+    text-shadow: 3px 1px 1px #ff00ea9a, -4px -1px 1px #00f3ff9a;
   }
   20% {
-    text-shadow: 2px 1px 1px #00f3ff48, -3px -1px 1px #ff00ea48;
+    text-shadow: 3px 1px 1px #00f3ff9a, -4px -1px 1px #ff00ea9a;
   }
   40% {
-    text-shadow: 1px 2px 1px #ff00ea48, -1px -1px 1px #00f3ff48;
+    text-shadow: 1px 2px 1px #ff00ea9a, -1px -1px 1px #00f3ff9a;
   }
   60% {
-    text-shadow: 3px 1px 1px #00f3ff48, -2px -1px 1px #ff00ea48;
+    text-shadow: 3px 1px 1px #00f3ff9a, -4px -1px 1px #ff00ea9a;
   }
   80% {
-    text-shadow: 1px 1px 1px #ff00ea48, -1px -1px 1px #00f3ff48;
+    text-shadow: 1px 1px 1px #ff00ea9a, -1px -1px 1px #00f3ff9a;
   }
   100% {
-    text-shadow: 1px 1px 1px #00f3ff48, -1px -1px 1px #ff00ea48;
+    text-shadow: 4px -1px 1px #00f3ff9a, -4px -1px 1px #ff00ea9a;
   }
 }
 
@@ -210,12 +211,22 @@
   -webkit-animation: bounce 0.9s infinite, change-color 10s ease-in-out infinite;
 }
 
+.bounceFastGlitch {
+  animation: bounce 0.9s infinite, glitch 2s ease-in-out infinite;
+  -webkit-animation: bounce 0.9s infinite, glitch 2s ease-in-out infinite;
+}
+
 .slideLefglitchAnim {
   animation: slide-in-left 3s ease-out, glitch 2s infinite;
   -webkit-animation: slide-in-left 3s ease-out, glitch 2s infinite;
 }
 
-.glitchAnimHover a:hover{
-  animation: glitch 2s infinite;
-  -webkit-animation: glitch 2s infinite;
+.glitchAnimHover:hover{
+  animation: glitch 2s ease-in-out infinite;
+  -webkit-animation: glitch 2s ease-in-out infinite;
+}
+
+.glitchAnimBoxHover:hover {
+  animation: glitchBox 2s ease-in-out infinite;
+  -webkit-animation: glitchBox 2s ease-in-out infinite;
 }
