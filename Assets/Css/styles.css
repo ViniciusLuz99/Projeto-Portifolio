@@ -143,13 +143,23 @@ Estilos da pagina
 }
 /*/*/
 .navLanguage a {
-  /* outline: 1px solid red; */
+  /*outline: 1px solid red;
+  */
   display: flex;
   align-items: center;
   color: white;
   background-color: var(--dark-background-strong);
+  padding: 1px;
+  border-radius: 5px;
   gap: 10px;
-  font-size: 1rem;
+  font-size: 0.7rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.navLanguage a:hover {
+  outline: 1px solid var(--primary-color);
 }
 .navLanguage img {
   width: 1.4rem;
