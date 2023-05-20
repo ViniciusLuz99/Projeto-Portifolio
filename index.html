@@ -34,6 +34,7 @@
       <header id="headerNav" class="neonBox">
         <nav id="nav" class="fadeInAnim">
           <section class="navLanguage">
+            <!--!Transformar em um botão futuramente-->
             <a href="./404.html"
               ><img
                 src="./Assets/img/icons/icons8-brasil-48.png"
@@ -79,7 +80,7 @@
                 rgba(0, 0, 0, 0),
                 rgba(0, 0, 0, 0.116)
               ),
-              url('./Assets/img/backgrounds/stars.svg') center fixed repeat;
+              url('./Assets/img/backgrounds/stars.svg') center / cover no-repeat;
           "
           class="fadeInAnim"
         >
@@ -87,32 +88,40 @@
             <section class="headerText">
               <h1 class="slideLeftFast">Vinicius Luz</h1>
               <h2 class="slideLeftAnim">Desenvolvedor Web</h2>
-              <div class="headerIcons slideLeftFast">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Linkedin "
-                  class="headerSocialIcons"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Github "
-                  class="headerSocialIcons slideLeftFast"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Instagram "
-                  class="headerSocialIcons"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
+              <nav class="slideLeftFast">
+                <ul class="headerIcons">
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Linkedin "
+                      class="headerSocialIcons"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Github "
+                      class="headerSocialIcons slideLeftFast"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Instagram "
+                      class="headerSocialIcons"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                </ul>
+              </nav>
             </section>
             <!-- <section class="headerLogo">
               <img
@@ -135,12 +144,12 @@
           <h2 id="aboutH2">Sobre mim</h2>
           <div class="profileCard">
             <div class="profileHeader">
-              <img src="https://via.placeholder.com/150x150" alt="#" />
+              <img src="./Assets/img/profile/IMG_20210603_102.png" alt="#" />
             </div>
             <div class="profileBody">
               <h3 class="ProfileName glitchAnim">Vinicius Luz</h3>
               <p class="profileRole">Web Developer</p>
-              <p class="profileBio"><span> ✨ Lorem ipsum dolor</p></span></p>
+              <p class="profileBio"><span>✨ Lorem ipsum dolor</span></p>
               <p class="profileBio">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
                 fuga cumque minima hic vero quaerat. Laborum, perferendis minus
