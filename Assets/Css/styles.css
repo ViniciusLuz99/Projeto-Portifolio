@@ -192,6 +192,7 @@ Estilos da pagina
   background-size: cover; /*hero img*/
   background-repeat: no-repeat;
   background-position: center center;
+  border-bottom: 1px solid var(--neon-primary-color);
 }
 .headerTextLogo {
   /*outline: 1px solid red;*/
@@ -311,7 +312,126 @@ Estilos da pagina
   color: white;
 }
 /*/*/
+#about {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: var(--dark-background-strong);
+}
+#aboutH2 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  border-bottom: 1px solid var(--primary-color);
+}
+.profileCard {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 1rem; */
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  max-width: 700px;
+  background-color: var(--dark-background-lightest)var(--dark-background-medium);
+  outline: 1px solid var(--primary-color);
+  box-shadow: 0 0 15px var(--neon-primary-color);
+}
+.profileHeader {
+  height: 130px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  background: url("../img/backgrounds/CurveLine.svg") center center / cover
+      no-repeat,
+    linear-gradient(
+      35deg,
+      var(--primary-color) 10%,
+      var(--quaternary-color),
+      var(--secondary-color)
+    );
+  /* margin-bottom: 1.5rem; */
+  border-bottom: 1px solid var(--black-5);
+  box-shadow: var(--shadow-M);
+}
+.profileHeader img {
+  width: 60%;
+  margin: 20px;
+  min-width: 180px;
+  max-width: 190px;
+  border-radius: 50%;
+  border: 3px solid var(--white-3);
+  box-shadow: var(--shadow-M);
+}
 
+.profileBody {
+  padding: 20px;
+  margin-top: 1.4rem;
+  width: 100%;
+}
+
+.ProfileName {
+  font-size: 1.5rem;
+  margin-top: 2.2rem;
+}
+
+.profileRole {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: -8px;
+  margin-left: 5px;
+  text-shadow: 0 0 10px var(--neon-primary-color);
+}
+
+.profileBio {
+  font-size: 1rem;
+  font-weight: light;
+  text-indent: 2px;
+
+  padding: 1px;
+  margin: 0 auto;
+  margin-top: 0.1rem;
+}
+
+.profileFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 0 0 10px 10px;
+  background-color: var(--black-1);
+  text-shadow: var(--shadow-G);
+  border-top: 1px solid var(--black-4);
+  width: 100%;
+  height: 50px;
+}
+.profileFooter a {
+  color: var(--white-4);
+}
+
+.profileFooter a i {
+  font-size: 1.5rem;
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+}
+
+.profileFooter a:hover i {
+  color: #e44e76;
+  transform: scale(1.5);
+  transition: ease-in-out 0.3s;
+}
+
+.profileFooter .fa-github:hover {
+  color: black;
+}
+.profileFooter .fa-instagram:hover {
+  color: var(--instagram-pink);
+}
+.profileFooter .fa-linkedin:hover {
+  color: var(--linkedin-blue);
+}
+.profileFooter .fa-globe:hover {
+  color: var(--website-green);
+}
+
+/*/*/
 #aboutMe {
   display: none;
 }
