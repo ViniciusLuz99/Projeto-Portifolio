@@ -21,6 +21,12 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+
     <link rel="stylesheet" href="./Assets/Css/styles.css" />
     <link rel="stylesheet" href="./Assets/Css/animations.css" />
     <link rel="stylesheet" href="./Assets/Css/sidePanel.css" />
@@ -141,7 +147,7 @@
         </header>
         <!--------------------------------------------------->
         <section id="about" class="centerAll">
-          <h2 id="aboutH2">Sobre mim</h2>
+          <h2 class="highlight">Sobre mim</h2>
           <div class="profileCard">
             <div class="profileHeader">
               <img src="./Assets/img/profile/IMG_20210603_102.png" alt="#" />
@@ -189,6 +195,91 @@
             </nav>
           </div>
         </section>
+        <section id="skills" class="centerAll">
+          <h2 class="highlight">Habilidades</h2>
+          <ul class="skillsList">
+            <li class="skill" title="HTML">
+              <i class="devicon-html5-plain"></i>
+            </li>
+            <li class="skill" title="CSS">
+              <i class="devicon-css3-plain"></i>
+            </li>
+            <li class="skill" title="JavaScript">
+              <i class="devicon-javascript-plain"></i>
+            </li>
+            <li class="skill" title="GitHub">
+              <i class="devicon-github-plain"></i>
+            </li>
+            <li class="skill" title="Placeholder">
+              <i class="fas fa-question-circle" title="Placeholder"></i>
+            </li>
+            <li class="skill" title="Placeholder">
+              <i class="fas fa-question-circle" title="Placeholder"></i>
+            </li>
+          </ul>
+        </section>
+        <section id="projectSection" class="projectsCard centerAll">
+          <h2 class="highlight">Projetos em Destaque</h2>
+          <div id="projects">
+            <!--!Remover se for colocar JS para isso-->
+            <section class="projectsCard">
+              <div class="projectList">
+                <section class="project">
+                  <div class="projectImg">
+                    <img
+                      src="https://via.placeholder.com/300"
+                      alt="Projeto 1 Image"
+                    />
+                  </div>
+                  <div class="projectDescription">
+                    <p>Descrição do projeto 1.</p>
+                    <h3>Projeto 1</h3>
+                    <ul class="techList">
+                      <li><i class="devicon-html5-plain"></i></li>
+                      <li><i class="devicon-css3-plain"></i></li>
+                      <li><i class="devicon-javascript-plain"></i></li>
+                    </ul>
+                  </div>
+                  <div class="projectLinks">
+                    <a href="https://linkdoprojeto1.com" target="_blank"
+                      >Ver projeto</a
+                    >
+                    <a href="https://linkdoprojeto1.com" target="_blank"
+                      >Repositório</a
+                    >
+                  </div>
+                </section>
+                <section class="project">
+                  <div class="projectImg">
+                    <img
+                      src="https://via.placeholder.com/300"
+                      alt="Projeto 2 Image"
+                    />
+                  </div>
+                  <div class="projectDescription">
+                    <p>Descrição do projeto 2.</p>
+                    <h3>Projeto 2</h3>
+                    <ul class="techList">
+                      <li><i class="devicon-react-plain"></i></li>
+                      <li><i class="devicon-nodejs-plain"></i></li>
+                      <li><i class="devicon-express-original"></i></li>
+                    </ul>
+                  </div>
+                  <div class="projectLinks">
+                    <a href="https://linkdoprojeto2.com" target="_blank"
+                      >Ver projeto</a
+                    >
+                    <a href="https://linkdoprojeto2.com" target="_blank"
+                      >Repositório</a
+                    >
+                  </div>
+                </section>
+                <!-- Adicione mais projetos conforme necessário -->
+                <!--!Remover se for colocar JS para isso-->
+              </div>
+            </section>
+          </div>
+        </section>
       </main>
       <!--------------------------------------------------->
       <main id="aboutMe"></main>
@@ -198,6 +289,9 @@
         <p>Copyright © 2023</p>
       </footer>
     </div>
+    <!--Projects section-->
+    <script src="./Assets/Js/projectsCard.js"></script>
+    <!--sidepanel-->
     <script src="./Assets/Js/sidePanel.js"></script>
   </body>
 </html>
