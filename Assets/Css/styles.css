@@ -688,6 +688,64 @@ Projects
   display: none;
   border-top: 1px solid var(--primary-color);
 }
+
+/*
+---------------------------
+Right Fixed Button
+---------------------------
+*/
+.rightFixedButtons {
+  position: fixed;
+  bottom: 2rem;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.rightFixedButtons a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+#BackToTop {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  animation: rocketLaunch 0.5s;
+  border: 1px solid var(--black-5);
+  background-color: rgba(0, 0, 0, 0.521);
+  transition: 0.2s ease-in-out;
+}
+
+@keyframes rocketLaunch {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#BackToTop a {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
 /*
 ---------------------------
 Este é um comentário de exemplo
