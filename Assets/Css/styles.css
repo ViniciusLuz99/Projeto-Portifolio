@@ -717,6 +717,12 @@ Contact
 .ContactField {
   box-shadow: var(--shadow-G);
   border: 1px solid var(--black-1);
+  transition: 0.3s ease-in-out;
+}
+.ContactField:hover {
+  border: 1px solid var(--neon-primary-color);
+  box-shadow: var(--shadow-G), 0 0 10px var(--neon-primary-color);
+  transition: 0.3s ease-in-out;
 }
 fieldset {
   padding: 20px;
