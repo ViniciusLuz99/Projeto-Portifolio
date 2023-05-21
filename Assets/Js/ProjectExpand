@@ -7,14 +7,14 @@ Oculta o botão "seeMoreButton" para evitar que seja clicado novamente.
 Exibe o botão "seeLessButton" para permitir que o usuário recolha a seção.*/
 function expand() {
   document.getElementById("expand").style.maxHeight = "1000px";
-  document.getElementById("expand").style.filter = "blur(0px)";
+
   document.getElementById("seeMoreButton").style.display = "none";
   document.getElementById("seeLessButton").style.display = "block";
 }
 
 function collapse() {
   document.getElementById("expand").style.maxHeight = "100px";
-  document.getElementById("expand").style.filter = "blur(1px)";
+
   document.getElementById("seeMoreButton").style.display = "block";
   document.getElementById("seeLessButton").style.display = "none";
 }

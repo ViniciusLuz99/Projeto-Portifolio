@@ -366,8 +366,8 @@ About
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   /*background profile*/
-  background: url("../img/profile/retrowave-synthwave.gif") bottom center / cover
-    no-repeat;
+  background: url("../img/profile/retrowave-synthwave.gif") bottom center /
+    cover no-repeat;
   border-bottom: 1px solid var(--black-5);
   box-shadow: var(--shadow-M);
 }
@@ -440,7 +440,7 @@ About
 }
 
 .profileFooter .fa-github:hover {
-  color: black;
+  color: white;
 }
 .profileFooter .fa-instagram:hover {
   color: var(--instagram-pink);
@@ -672,8 +672,8 @@ Projects
   overflow: hidden;
   max-height: 100px;
   overflow: hidden;
-  filter: blur(1px);
 }
+
 #seeMoreButton,
 #seeLessButton {
   width: 100%;
@@ -688,7 +688,159 @@ Projects
   display: none;
   border-top: 1px solid var(--primary-color);
 }
+/*
+---------------------------
+Contact
+---------------------------
+*/
+#contact {
+  padding-top: 3rem;
+  background-color: var(--dark-background-strong);
+  width: 100%;
+  box-shadow: var(--shadow-insent-M);
+}
 
+#contact h2 {
+  margin-bottom: 3rem;
+}
+
+.contactCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 auto;
+  gap: 5px;
+  width: 95%;
+  max-width: 1000px;
+}
+.ContactField {
+  box-shadow: var(--shadow-G);
+  border: 1px solid var(--black-1);
+}
+fieldset {
+  padding: 20px;
+  background-color: var(--dark-background-strong);
+  border: 1px solid var(--black-1);
+  border-radius: 3px;
+}
+legend {
+  font-weight: normal;
+}
+.ContactField > legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/*Card contact*/
+.ContactCard {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.ContactCard ul {
+  list-style-type: none;
+}
+.contactLink {
+  display: flex;
+  align-items: center;
+}
+.contactLink a {
+  color: white;
+  transition: 0.3s ease;
+}
+.contactLink i {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin: 8px;
+  outline: 1px solid var(--black-3);
+  border-radius: 5px;
+}
+.contactLink a:hover {
+  color: var(--primary-color);
+  transition: 0.3s ease;
+}
+/*Email form*/
+.emailContact {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 1px solid var(--black-2);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: var(--white-2);
+  background-color: var(--background-color);
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  transition: 0.3s ease;
+}
+input:hover,
+textarea:hover {
+  outline: 1px solid var(--black-5);
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+input:invalid:not(:placeholder-shown):focus,
+textarea:invalid:not(:placeholder-shown):focus {
+  border-color: red;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.btn-submit {
+  background-color: var(--primary-color);
+  font-size: 1rem;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: var(--secondary-color);
+}
 /*
 ---------------------------
 Right Fixed Button
@@ -702,7 +854,7 @@ Right Fixed Button
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 2;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -747,8 +899,8 @@ Right Fixed Button
   border-radius: 10px;
 }
 #BackToTop:hover {
- border-color: var(--primary-color);
- box-shadow: 0 0 10px var(--primary-color);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px var(--primary-color);
 }
 /*
 ---------------------------
@@ -803,6 +955,16 @@ Este é um comentário de exemplo
   .headerLogo img {
     width: 80%;
   } */
+  /*Contact*/
+  .contactCards {
+    width: 95%;
+    max-width: 1200px;
+    gap: 20px;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-around;
+  }
 }
 
 /* Estilos para widescreen */

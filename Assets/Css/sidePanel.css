@@ -3,10 +3,10 @@
   height: 100vh; /* Specify a height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 999; /* Stay on top */
   top: 0;
   right: 0; /* Put to right */
-  background-color: #111111af; /* Black*/
+  background-color: #111111ce; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   border-inline: 1px solid var(--black-5);/*Inline borders |content|*/
