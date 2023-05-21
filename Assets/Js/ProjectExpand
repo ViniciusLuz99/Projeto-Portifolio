@@ -6,7 +6,7 @@ Define a altura máxima da seção "expand" como "1000px", permitindo que todo o
 Oculta o botão "seeMoreButton" para evitar que seja clicado novamente.
 Exibe o botão "seeLessButton" para permitir que o usuário recolha a seção.*/
 function expand() {
-  document.getElementById("expand").style.maxHeight = "1000px";
+  document.getElementById("expand").style.maxHeight = "5000px";
 
   document.getElementById("seeMoreButton").style.display = "none";
   document.getElementById("seeLessButton").style.display = "block";

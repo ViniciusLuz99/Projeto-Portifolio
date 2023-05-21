@@ -627,11 +627,14 @@ Projects
 
 .OtherProjectItem {
   background-color: var(--dark-background-lighter);
+  width: 100%;
+  max-width: 250px;
   min-width: 200px;
   border-radius: 10px 10px;
   border-bottom: 2px solid transparent;
   transition: 0.3s ease;
   outline: 1px solid var(--black-4);
+  box-shadow: var(--shadow-M);
 }
 
 .OtherProjectItem:hover {
@@ -643,7 +646,7 @@ Projects
 .OtherProjectItem img {
   display: block;
   width: 100%;
-  height: 100px;
+  max-height: 200px;
   object-fit: cover;
 }
 
@@ -863,7 +866,7 @@ Footer
 .footerCopy p {
   font-size: 0.7rem;
 }
-.footerCopy a{
+.footerCopy a {
   text-decoration: underline;
   color: white;
 }
