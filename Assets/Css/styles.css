@@ -366,7 +366,7 @@ About
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   /*background profile*/
-  background: url("../img/profile/_20210520_174153E.jpg") center center / cover
+  background: url("../img/profile/retrowave-synthwave.gif") bottom center / cover
     no-repeat;
   border-bottom: 1px solid var(--black-5);
   box-shadow: var(--shadow-M);
@@ -741,11 +741,15 @@ Right Fixed Button
 }
 
 #BackToTop a {
+  font-size: 20px;
   width: 40px;
   height: 40px;
   border-radius: 10px;
 }
-
+#BackToTop:hover {
+ border-color: var(--primary-color);
+ box-shadow: 0 0 10px var(--primary-color);
+}
 /*
 ---------------------------
 Este é um comentário de exemplo
