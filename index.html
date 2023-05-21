@@ -136,7 +136,7 @@
               />
             </section> -->
           </div>
-          <!--------------------------------------------------->
+          <!---------->
           <div id="scroll">
             <a href="#about" class="scroll-down bounceAnim"
               ><span class="scroll-down-text bounceAnim opacityAnim"
@@ -145,6 +145,8 @@
             ></a>
           </div>
         </header>
+        <!--------------------------------------------------->
+        <section class="separator"></section>
         <!--------------------------------------------------->
         <section id="about" class="centerAll">
           <h2 class="highlight">Sobre mim</h2>
@@ -195,6 +197,9 @@
             </nav>
           </div>
         </section>
+        <!--------------------------------------------------->
+        <section class="separatorNeon"></section>
+        <!--------------------------------------------------->
         <section id="skills" class="centerAll">
           <h2 class="highlight">Habilidades</h2>
           <ul class="skillsList">
@@ -218,72 +223,73 @@
             </li>
           </ul>
         </section>
+        <!--------------------------------------------------->
+        <section class="separatorNeon"></section>
+        <!--------------------------------------------------->
         <section id="projectSection" class="projectsCard centerAll">
           <h2 class="highlight">Projetos em Destaque</h2>
+          <!-- Cards detalhados dos projetos em destaque -->
           <div id="projects">
-            <!--!Remover se for colocar JS para isso-->
-            <section class="projectsCard">
-              <div class="projectList">
-                <section class="project">
-                  <div class="projectImg">
-                    <img
-                      src="https://via.placeholder.com/300"
-                      alt="Projeto 1 Image"
-                    />
+            <!-- Adicione mais sections com a classe "project" conforme necessário -->
+          </div>
+          <!--------------------------------------------------->
+          <section class="separator"></section>
+          <!--------------------------------------------------->
+          <!--projetos secundários -->
+          <div id="otherProjects" class="centerAll">
+            <h3 class="highlight">Outros Projetos</h3>
+            <p>Veja também outros projetos que desenvolvi:</p>
+            <div id="expand">
+              <ul class="otherProjectList">
+                <li class="OtherProjectItem">
+                  <p>Lorem Ipsum</p>
+                  <img src="https://via.placeholder.com/300" alt="" />
+                  <div class="otherPlinks">
+                    <a href="">Github</a> <a href="">Ver</a>
                   </div>
-                  <div class="projectDescription">
-                    <p>Descrição do projeto 1.</p>
-                    <h3>Projeto 1</h3>
-                    <ul class="techList">
-                      <li><i class="devicon-html5-plain"></i></li>
-                      <li><i class="devicon-css3-plain"></i></li>
-                      <li><i class="devicon-javascript-plain"></i></li>
-                    </ul>
+                </li>
+                <li class="OtherProjectItem">
+                  <p>Lorem Ipsum</p>
+                  <img src="https://via.placeholder.com/300" alt="" />
+                  <div class="otherPlinks">
+                    <a href="">Github</a> <a href="">Ver</a>
                   </div>
-                  <div class="projectLinks">
-                    <a href="https://linkdoprojeto1.com" target="_blank"
-                      >Ver projeto</a
-                    >
-                    <a href="https://linkdoprojeto1.com" target="_blank"
-                      >Repositório</a
-                    >
+                </li>
+                <li class="OtherProjectItem">
+                  <p>Lorem Ipsum</p>
+                  <img src="https://via.placeholder.com/300" alt="" />
+                  <div class="otherPlinks">
+                    <a href="">Github</a> <a href="">Ver</a>
                   </div>
-                </section>
-                <section class="project">
-                  <div class="projectImg">
-                    <img
-                      src="https://via.placeholder.com/300"
-                      alt="Projeto 2 Image"
-                    />
+                </li>
+                <li class="OtherProjectItem">
+                  <p>Lorem Ipsum</p>
+                  <img src="https://via.placeholder.com/300" alt="" />
+                  <div class="otherPlinks">
+                    <a href="">Github</a> <a href="">Ver</a>
                   </div>
-                  <div class="projectDescription">
-                    <p>Descrição do projeto 2.</p>
-                    <h3>Projeto 2</h3>
-                    <ul class="techList">
-                      <li><i class="devicon-react-plain"></i></li>
-                      <li><i class="devicon-nodejs-plain"></i></li>
-                      <li><i class="devicon-express-original"></i></li>
-                    </ul>
+                </li>
+                <li class="OtherProjectItem">
+                  <p>Lorem Ipsum</p>
+                  <img src="https://via.placeholder.com/300" alt="" />
+                  <div class="otherPlinks">
+                    <a href="">Github</a> <a href="">Ver</a>
                   </div>
-                  <div class="projectLinks">
-                    <a href="https://linkdoprojeto2.com" target="_blank"
-                      >Ver projeto</a
-                    >
-                    <a href="https://linkdoprojeto2.com" target="_blank"
-                      >Repositório</a
-                    >
-                  </div>
-                </section>
-                <!-- Adicione mais projetos conforme necessário -->
-                <!--!Remover se for colocar JS para isso-->
-              </div>
-            </section>
+                </li>
+              </ul>
+            </div>
+            <button id="seeMoreButton" onclick="expand()">
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <button id="seeLessButton" onclick="collapse()">
+              <i class="fas fa-chevron-up"></i>
+            </button>
           </div>
         </section>
+        <!--------------------------------------------------->
+        <section class="separatorNeon"></section>
+        <!--------------------------------------------------->
       </main>
-      <!--------------------------------------------------->
-      <main id="aboutMe"></main>
-      <!--------------------------------------------------->
       <footer>
         <p>Contato: email@exemplo.com.br</p>
         <p>Copyright © 2023</p>
@@ -291,6 +297,8 @@
     </div>
     <!--Projects section-->
     <script src="./Assets/Js/projectsCard.js"></script>
+    <!--Others Projects Expand function-->
+    <script src="./Assets/Js/ProjectExpand"></script>
     <!--sidepanel-->
     <script src="./Assets/Js/sidePanel.js"></script>
   </body>

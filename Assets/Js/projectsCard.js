@@ -1,4 +1,3 @@
-/*
 // Função para criar um projeto
 function createProject(
   title,
@@ -20,8 +19,8 @@ function createProject(
         <img src="${image}" alt="${title} Image">
       </div>
       <div class="projectDescription">
-        <p>${description}</p>
-        <h3>${title}</h3>
+       <h3>${title}</h3>
+       <p>${description}</p>
         <ul class="techList">${techIcons}</ul>
       </div>
       <div class="projectLinks">
@@ -96,4 +95,3 @@ const cardsContainer = document.querySelector("#projects");
 // Cria o HTML dos cartões de projeto e o insere no elemento selecionado
 const cardMarkup = createCard(projectCards);
 cardsContainer.innerHTML = cardMarkup;
-*/
