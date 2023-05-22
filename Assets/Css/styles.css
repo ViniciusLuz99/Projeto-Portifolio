@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600&display=swap");
 /*
    Arquivo CSS Mobile First
    ---------------------------------
@@ -706,6 +705,9 @@ Contact
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: var(--dark-background-strong);
+  background-image: url(../img/backgrounds/WorldMap.svg);
+  background-position: center center;
+  background-size: cover;
   width: 100%;
   box-shadow: var(--shadow-insent-M);
 }
