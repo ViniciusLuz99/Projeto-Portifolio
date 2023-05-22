@@ -560,6 +560,7 @@ Projects
   display: block;
   width: 100%;
   object-fit: cover;
+  background-color: white;
   border-bottom: 1px solid var(--neon-primary-color);
 }
 
@@ -569,7 +570,9 @@ Projects
   background-color: var(--dark-background-light);
   box-shadow: var(--shadow-insent-M);
 }
-
+.projectDescription p {
+  font-size: 0.6rem;
+}
 .techList {
   display: flex;
   justify-content: center;
@@ -627,8 +630,7 @@ Projects
 
 .OtherProjectItem {
   background-color: var(--dark-background-lighter);
-  width: 100%;
-  max-width: 250px;
+  max-width: 260px;
   min-width: 200px;
   border-radius: 10px 10px;
   border-bottom: 2px solid transparent;
@@ -642,11 +644,15 @@ Projects
   outline: 1px solid var(--neon-primary-color);
   box-shadow: 0 0 10px var(--neon-primary-color);
 }
+.OtherProjectItem:hover img{
+  overflow-Y: scroll;
+}
 
 .OtherProjectItem img {
   display: block;
   width: 100%;
   max-height: 200px;
+  object-position: top center;
   object-fit: cover;
 }
 

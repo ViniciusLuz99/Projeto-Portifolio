@@ -46,20 +46,23 @@ function createCard(projects) {
 // Array de objetos contendo os projetos
 const projects = [
   {
-    title: "Projeto 1",
-    description: "Descrição do projeto 1.",
+    title: "XYZ Company Website",
+    description: "Landpage desenvolvido para fins de aprendizado em HTML, CSS e JavaScript",
     technologies: [
       "devicon-html5-plain",
       "devicon-css3-plain",
       "devicon-javascript-plain",
     ],
-    image: "https://via.placeholder.com/300",
-    link: "https://linkdoprojeto1.com",
-    repository: "https://linkdoprojeto1.com",
+    image:
+      "https://github.com/ViniciusLuz99/Projeto-XYZ-company-website-P/raw/main/.github/desktop.gif",
+    link: "https://xyz-company.vercel.app/",
+    repository:
+      "https://github.com/ViniciusLuz99/Projeto-XYZ-company-website-P",
   },
+  /*--------------------*/
   {
     title: "Projeto 2",
-    description: "Descrição do projeto 2.",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut vero sequi consectetur?",
     technologies: [
       "devicon-react-plain",
       "devicon-nodejs-plain",
