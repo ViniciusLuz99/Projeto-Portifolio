@@ -14,10 +14,10 @@
  */
 function openNav() {
   var sidepanel = document.getElementById("mySidepanel");
-  if (sidepanel.style.width === "300px") {
+  if (sidepanel.style.width === "200px") {
     closeNav(); // Chama a função closeNav() se o painel já estiver aberto.
   } else {
-    sidepanel.style.width = "300px"; // Abre o painel definindo a largura como 300px.
+    sidepanel.style.width = "200px"; // Abre o painel definindo a largura como 300px.
   }
 }
 
