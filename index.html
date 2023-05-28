@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Este é o meu portfólio de desenvolvimento frontend, onde apresento meus projetos e habilidades em HTML, CSS e JavaScript. Explore meus projetos e entre em contato para serviços ou me oferecer oportunidades de trabalho."
+      content="Confira meu portfólio de desenvolvimento frontend com projetos e habilidades em HTML, CSS e JavaScript. Entre em contato para serviços ou oportunidades de trabalho."
     />
     <meta
       name="keywords"
@@ -15,6 +15,7 @@
     <meta name="author" content="Vinicius Luz" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://viniciusluz-portifolio.vercel.app/" />
+    <!--Fonts-->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -73,10 +74,10 @@
                   >&times;</a
                 >
               </li>
-              <li><a href="#about">Sobre</a></li>
-              <li><a href="#projectSection">Projetos</a></li>
+              <li><a href="#about" title="About">Sobre</a></li>
+              <li><a href="#projectSection" title="Projects">Projetos</a></li>
               <li>
-                <a href="#contact"><strong>Contato</strong></a>
+                <a href="#contact" title="Contact-me"><strong>Contato</strong></a>
               </li>
             </ul>
           </aside>
@@ -127,7 +128,7 @@
                       href="mailto:seu-email"
                       target="_blank"
                       rel="noopener noreferrer"
-                      itle="Email"
+                      title="Email"
                       class="headerSocialIcons"
                     >
                       <i class="fas fa-envelope"></i>
@@ -152,8 +153,76 @@
             ></a>
           </div>
         </header>
+        <div class="separator"></div>
         <!--------------------------------------------------->
-        <section class="separator"></section>
+
+        <section id="services" class="centerAll">
+          <h2 class="highlight">Serviços</h2>
+          <!------------>
+          <div class="serviceCard">
+            <div class="serviceHeader">
+              <h3 class="serviceName">
+                Desenvolvimento de Páginas Web e Landing Pages
+              </h3>
+            </div>
+            <div class="serviceBody">
+              <p class="serviceDescription">
+                Como freelancer, estou aqui para transformar suas ideias em
+                realidade. Ofereço serviços de criação de web pages e landing
+                pages personalizadas, focadas em transmitir sua mensagem de
+                forma impactante e envolvente. Utilizo tecnologias modernas,
+                como HTML5, CSS3 e JavaScript, para criar designs elegantes e
+                funcionais além de otimizar para mecanismos de busca (SEO).
+              </p>
+              <!-- <p class="serviceDescription">
+                Além disso, estou desenvolvendo meu próprio negócio, a
+                PixelWave, especializada em criação de páginas web e landing
+                pages que combinam design sofisticado e funcionalidades
+                modernas. Conheça meu portfólio de projetos realizados pela
+                PixelWave para ter uma ideia do meu trabalho.
+              </p> -->
+            </div>
+            <nav class="serviceFooter">
+              <!-- <a href="https://www.pixelwave.com.br" target="_blank" title="PixelWave Site" class="serviceLink"
+                >Conheça a PixelWave</a
+              > -->
+              <a href="#contact"  title="Contato" class="serviceLink"
+                >Entre em contato</a
+              >
+            </nav>
+          </div>
+          <!------------>
+          <div class="serviceCard">
+            <div class="serviceHeader">
+              <h3 class="serviceName">
+                Desenvolvimento Web Front-end para Empresas
+              </h3>
+            </div>
+            <div class="serviceBody">
+              <p class="serviceDescription">
+                Sou um desenvolvedor iniciante e estou buscando oportunidades
+                para expandir minhas habilidades. Tenho conhecimento em HTML,
+                CSS e JavaScript, e estou empenhado em aprimorar minha
+                proficiência nessas tecnologias.
+              </p>
+              <!-- <p class="serviceDescription">
+                eu objetivo é colaborar com projetos web e trabalhar com equipes que possam me proporcionar um ambiente de aprendizado e crescimento. Estou aberto a desafios e estou disposto a enfrentar novas experiências para aprimorar minhas habilidades de desenvolvimento front-end.
+              </p> -->
+              <p class="serviceDescription">
+                Se você está procurando um desenvolvedor front-end motivado e
+                dedicado, estou disponível para oportunidades de trabalho e
+                estou ansioso para contribuir em projetos que me permitam
+                expandir minha experiência e conhecimento.
+              </p>
+            </div>
+            <nav class="serviceFooter">
+              <a href="#projectSection" class="serviceLink"  title="Pojetos"
+                >Conheça meu trabalho</a
+              >
+            </nav>
+          </div>
+        </section>
+        <div class="separator"></div>
         <!--------------------------------------------------->
         <section id="about" class="centerAll">
           <h2 class="highlight">Sobre mim</h2>
@@ -164,12 +233,10 @@
             <div class="profileBody">
               <h3 class="ProfileName glitchAnim">Vinicius Luz</h3>
               <p class="profileRole">Web Developer</p>
-              <p class="profileBio"><span>✨ Lorem ipsum dolor</span></p>
+              <p class="profileBio"><span>📖Atualmente cursando Análise e desenvolvimento de sistemas(ADS)</span></p>
               <p class="profileBio">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
-                fuga cumque minima hic vero quaerat. Laborum, perferendis minus
-                sunt rem expedita est dolorem ducimus perspiciatis a, molestiae
-                ipsum nihil et.
+                Apaixonado por tecnologia, Synthwave e Rock.<br>
+                Em busca constante de novas oportunidades para aprimorar minha experiência.
               </p>
             </div>
             <nav class="profileFooter">
@@ -200,8 +267,7 @@
             </nav>
           </div>
         </section>
-        <!--------------------------------------------------->
-        <section class="separatorNeon"></section>
+        <div class="separatorNeon"></div>
         <!--------------------------------------------------->
         <section id="skills" class="centerAll">
           <h2 class="highlight">Habilidades</h2>
@@ -226,8 +292,7 @@
             </li>
           </ul>
         </section>
-        <!--------------------------------------------------->
-        <section class="separatorNeon"></section>
+        <div class="separatorNeon"></div>
         <!--------------------------------------------------->
         <section id="projectSection" class="projectsCard centerAll">
           <h2 class="highlight">Projetos em Destaque</h2>
@@ -235,8 +300,7 @@
           <div id="projects">
             <!-- Adicione mais sections com a classe "project" conforme necessário -->
           </div>
-          <!--------------------------------------------------->
-          <section class="separator"></section>
+          <div class="separator"></div>
           <!--------------------------------------------------->
           <!--projetos secundários -->
           <div id="otherProjects" class="centerAll">
@@ -334,8 +398,7 @@
             </button>
           </div>
         </section>
-        <!--------------------------------------------------->
-        <section class="separatorNeon"></section>
+        <div class="separatorNeon"></div>
         <!--------------------------------------------------->
         <section id="contact" class="centerAll">
           <h2 class="highlight">Contato</h2>
