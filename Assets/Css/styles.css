@@ -474,11 +474,12 @@ About
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   /*background profile*/
-  background: url("../img/profile/retrowave-synthwave.gif") bottom center /
+  background: url("../img/profile/retrowave-synthwave.webp") bottom center /
     cover no-repeat;
   border-bottom: 1px solid var(--black-5);
   box-shadow: var(--shadow-M);
 }
+
 .profileHeader img {
   margin: 60px 20px;
   min-width: 150px;
@@ -965,6 +966,8 @@ textarea {
 .btn-submit {
   background-color: var(--primary-100);
   font-size: 1rem;
+  font-weight: bold;
+  color: var(--text-100);
   border: none;
   padding: 10px 20px;
   border-radius: 4px;

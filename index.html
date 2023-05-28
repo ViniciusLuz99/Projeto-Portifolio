@@ -14,7 +14,7 @@
     />
     <meta name="author" content="Vinicius Luz" />
     <meta name="robots" content="index, follow" />
-    <link rel="robots" href="./robots.txt">
+    <link rel="robots" href="./robots.txt" />
     <link rel="canonical" href="https://viniciusluz-portifolio.vercel.app/" />
     <link
       rel="shortcut icon"
@@ -109,7 +109,9 @@
                   href="javascript:void(0)"
                   class="closebtn"
                   onclick="closeNav()"
+                  aria-label="Fechar painel lateral"
                 >
+                  >
                   <i class="fas fa-times"></i>
                 </button>
               </li>
@@ -455,7 +457,11 @@
                 </li>
               </ul>
             </div>
-            <button id="seeMoreButton" onclick="expand()">
+            <button
+              id="seeMoreButton"
+              onclick="expand()"
+              aria-label="Expandir seção de projetos"
+            >
               <i class="fas fa-chevron-down"></i>
             </button>
             <button id="seeLessButton" onclick="collapse()">
