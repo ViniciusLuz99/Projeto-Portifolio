@@ -205,7 +205,8 @@ Navbar
   border-radius: 3px;
 }
 .navLanguage img{
-  width: 1.5rem;
+  width: 1.3rem;
+  height: 1.3rem;
   display: inline-block;
 }
 .dropdown {
@@ -226,6 +227,8 @@ Navbar
 }
 .dropdownLanguage img {
   display: block ;
+  width: 1.3rem;
+  height: 1.3rem;
 }
 .dropdown:hover .dropdownLanguage {
   display: flex;
