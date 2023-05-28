@@ -156,6 +156,10 @@ a {
   background: var(--accent-100);
 }
 
+/*Seletor de texto*/
+::selection {
+  background-color: var(--accent-100);
+}
 /*
 Estilos da pagina
 */

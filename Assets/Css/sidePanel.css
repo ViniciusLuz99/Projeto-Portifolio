@@ -44,6 +44,7 @@
   color: red;
   border: none;
   padding: 20px;
+  cursor: pointer;
   background-color: transparent;
 }
 .closebtn:hover {
