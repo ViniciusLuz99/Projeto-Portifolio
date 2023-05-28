@@ -793,9 +793,8 @@ Contact
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: var(--bg-200);
-  background-image: url(../img/backgrounds/WorldMap.svg);
-  background-position: center center;
-  background-size: cover;
+  background: url(../img/backgrounds/WorldMap.svg) top no-repeat;
+  background-size: 80%;
   width: 100%;
   box-shadow: var(--shadow-insent-M);
 }
@@ -1088,6 +1087,11 @@ Este é um comentário de exemplo
     width: 80%;
   } */
   /*Contact*/
+  #contact {
+    background: url(../img/backgrounds/WorldMap.svg) center center
+      no-repeat/cover;
+    background-size: 90% auto, cover;
+  }
   .contactCards {
     width: 95%;
     max-width: 1200px;
