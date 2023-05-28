@@ -852,7 +852,7 @@ legend {
   border-radius: 5px;
 }
 .contactLink a:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   transition: 0.3s ease;
 }
 /*Email form*/
@@ -941,6 +941,7 @@ Footer
   width: 100%;
   padding: 5px;
   background-color: var(--dark-background-strongDark);
+  border-top: 1px solid var(--neon-primary-color);
   box-shadow: 0 0 10px var(--neon-primary-color), var(--shadow-M);
 }
 
