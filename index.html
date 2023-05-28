@@ -46,7 +46,7 @@
   <body>
     <div class="layout-container">
       <header id="headerNav" class="neonBox">
-        <nav id="nav" class="fadeInAnim">
+        <nav id="nav">
           <section class="navLanguage">
             <!--!Transformar em um botão futuramente-->
             <a href="./404.html"
@@ -67,18 +67,38 @@
             <!--menu-closed by default-->
             <ul id="mySidepanel" class="sidepanel">
               <li>
-                <a
+                <button
                   href="javascript:void(0)"
                   class="closebtn"
                   onclick="closeNav()"
-                  >&times;</a
+                >
+                  <i class="fas fa-times"></i>
+                </button>
+              </li>
+              <li>
+                <a href="#main" onclick="closeNav()" title="Home">
+                  <i class="fas fa-home"></i> Inicio</a
                 >
               </li>
-              <li><a href="#about" title="About">Sobre</a></li>
-              <li><a href="#projectSection" title="Projects">Projetos</a></li>
               <li>
-                <a href="#contact" title="Contact-me"
-                  ><strong>Contato</strong></a
+                <a href="#services" onclick="closeNav()" title="Services">
+                  <i class="fas fa-cogs"></i> Serviços
+                </a>
+              </li>
+              <li>
+                <a href="#about" onclick="closeNav()" title="About">
+                  <i class="fas fa-info-circle"></i> Sobre</a
+                >
+              </li>
+              <li>
+                <a href="#projectSection" onclick="closeNav()" title="Projects"
+                  ><i class="fas fa-tasks"></i> Projetos</a
+                >
+              </li>
+              <li>
+                <a href="#contact" onclick="closeNav()" title="Contact-me">
+                  <i class="fas fa-envelope"></i>
+                  <strong>Contato</strong></a
                 >
               </li>
             </ul>

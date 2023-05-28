@@ -1,34 +1,37 @@
 /* The sidepanel menu */
 .sidepanel {
-  height: 100vh; /* Specify a height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 999; /* Stay on top */
+  height: 100vh;
+  width: 0%;
+  max-width: 250px;
+  position: fixed;
+  z-index: 9999;
   top: 0;
-  right: 0; /* Put to right */
-  background-color: #111111e8; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  border-inline: 1px solid var(--black-5);/*Inline borders |content|*/
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  right: 0;
+  background-color: var(--bg-200);
+  overflow-x: hidden;
+  padding-top: 60px;
+  border-left: 2px solid var(--bg-300);
+  transition: 0.5s ease-in;
+  border-radius: 5px 0px 0px 10px;
 }
-
 
 /* Sidepanel links */
 .sidepanel a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 1.3rem;
-  color: var(--white-1);
   display: block;
+  font-size: 1.2rem;
+  color: var(--text-100);
+  text-decoration: none;
+  padding: 8px 8px 8px 12px;
+  border-bottom: 1px solid var(--bg-300);
 }
-
+.sidepanel i {
+  margin-right: 3px;
+}
 /* hover change their color */
 .sidepanel a:hover {
-  color: var(--white-2);
-  text-shadow: 2px 1px 1px var(--primary-color),
-  -2px -1px 1px var(--secondary-color);
-  text-decoration: underline var(--primary-color);
+  color: var(--text-200);
+  text-shadow: 2px 1px 1px var(--primary-100);
+  background-color: var(--accent-100);
 }
 
 /* Position and style the close button (top right corner) */
@@ -36,15 +39,20 @@
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-left: 50px;
   color: red;
+  border: none;
+  padding: 20px;
+  background-color: transparent;
 }
-
+.closebtn:hover {
+  transform: scale(1.2);
+}
 /* Style the button that is used to open the sidepanel */
 .openbtn {
   font-size: 1.5rem;
-  color: white;
+  color: var(--text-100);
   background-color: transparent;
   cursor: pointer;
   padding: 5px 10px;
@@ -53,14 +61,14 @@
 }
 
 .openbtn:hover {
-  /* color: var(--primary-color); */
-  text-shadow: 3px 1px 1px var(--primary-color),
-  -4px -1px 1px var(--secondary-color);
+  text-shadow: 3px 1px 1px var(--primary-100), -4px -1px 1px var(--accent-100);
 }
 /* Transition */
 .openbtn:hover,
 .sidepanel a:hover,
 .sidepanel a,
+.closebtn,
+.closebtn:hover,
 .openbtn {
   transition: 0.3s;
 }
