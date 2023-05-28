@@ -191,28 +191,49 @@ Navbar
   max-width: 1000px;
 }
 /*/*/
-.navLanguage a {
-  /*outline: 1px solid red;
-  */
+.navLanguage {
   display: flex;
+  gap: 53px;
+}
+.dropdownIcone{
+  border: 1px solid var(--bg-400);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  color: var(--text-100);
   background-color: var(--bg-200);
-  padding: 1px;
-  border-radius: 5px;
-  gap: 10px;
-  font-size: 0.7rem;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: 3px;
 }
-.navLanguage a:hover {
+.navLanguage img{
+  width: 1.5rem;
+  display: inline-block;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownLanguage {
+  display: none;
+  position: absolute;
+  background-color: var(--bg-200);
+  min-width: 50px;
+  z-index: 1;
+}
+.dropdownLanguage:hover{
   outline: 1px solid var(--primary-100);
+  border-radius: 3px;
 }
-.navLanguage img {
-  width: 1.4rem;
+.dropdownLanguage img {
+  display: block ;
 }
+.dropdown:hover .dropdownLanguage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /*/*/
 .navLogo {
   margin: 1px;
