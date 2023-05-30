@@ -45,13 +45,14 @@
   right: 25px;
   font-size: 2rem;
   margin-left: 50px;
-  color: red;
+  color: var(--primary-100);
   border: none;
   padding: 20px;
   cursor: pointer;
   background-color: transparent;
 }
 .closebtn:hover {
+  color: red;
   transform: scale(1.2);
 }
 /* Style the button that is used to open the sidepanel */
