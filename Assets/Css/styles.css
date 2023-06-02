@@ -455,8 +455,9 @@ Services
   margin-bottom: 1rem;
 }
 .serviceDescription span {
-  background-color: #00ccff3f;
+  background-color: #00ccff27;
   font-weight: bold;
+  padding: 1px;
 }
 .serviceLink {
   display: block;
