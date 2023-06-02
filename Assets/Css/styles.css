@@ -2,6 +2,29 @@
    Arquivo CSS Mobile First
    ---------------------------------
 */
+@font-face {
+  font-family: "Lato";
+  src: url("../Fonts/Lato/Lato-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../Fonts/Lato/Lato-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../Fonts/Lato/Lato-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../Fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
 /*Root*/
 :root {
   /* Cores */
@@ -49,7 +72,7 @@
 
   /* Fontes */
   --fonte-titulo: "Saira", sans-serif;
-  --fonte-corpo: "Saira", sans-serif;
+  --fonte-corpo: "Lato", sans-serif;
   --fonte-mono: "Fira Code", monospace;
 
   /*sombras para fundo escuro*/
@@ -78,11 +101,12 @@ e desktops. Eles fornecem um estilo básico para elementos HTML, como fontes, co
 margens/padding.
 */
 html {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 body {
   font-family: var(--fonte-corpo);
+  font-weight: normal;
   color: var(--text-100);
   background-color: var(--bg-100);
 }
@@ -94,12 +118,15 @@ h4,
 h5,
 h6 {
   text-shadow: var(--text-shadow-M);
+  font-family: var(--fonte-titulo);
 }
 h2 {
   font-size: 2rem;
 }
 p {
   text-shadow: var(--text-shadow-P);
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
 a {
   color: #007bff;
@@ -195,7 +222,7 @@ Navbar
   display: flex;
   gap: 53px;
 }
-.dropdownIcone{
+.dropdownIcone {
   border: 1px solid var(--bg-400);
   padding: 5px;
   display: flex;
@@ -204,7 +231,7 @@ Navbar
   background-color: var(--bg-200);
   border-radius: 3px;
 }
-.navLanguage img{
+.navLanguage img {
   width: 1.3rem;
   height: 1.3rem;
   display: inline-block;
@@ -221,12 +248,12 @@ Navbar
   min-width: 50px;
   z-index: 1;
 }
-.dropdownLanguage:hover{
+.dropdownLanguage:hover {
   outline: 1px solid var(--primary-100);
   border-radius: 3px;
 }
 .dropdownLanguage img {
-  display: block ;
+  display: block;
   width: 1.3rem;
   height: 1.3rem;
 }
@@ -264,7 +291,7 @@ Hero section
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 3em);
+  min-height: calc(100vh - 1em);
   background-size: cover; /*hero img*/
   background-repeat: no-repeat;
   background-position: center center;
@@ -366,6 +393,7 @@ Hero section
 
 #scroll .scroll-down .scroll-down-text {
   font-size: 1.2rem;
+  display: none;
   transition: all 0.1s ease-in-out;
 }
 
@@ -395,13 +423,13 @@ Services
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
   width: 95%;
   max-width: 1000px;
   background-color: var(--bg-200);
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: var(--shadow-M);
-  padding: 10px;
+  padding: 15px;
   border: 1px solid var(--black-1);
   transition: 0.2s ease-in-out;
 }
@@ -411,24 +439,31 @@ Services
   transition: 0.3s ease-in-out;
 }
 .serviceName {
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.5rem;
 }
 
 .serviceBody,
 .serviceHeader {
-  width: 95%;
+  width: 98%;
   margin: 0 auto;
 }
-.serviceDescription {
-  margin: 0.5rem;
-  font-size: 0.8rem;
-}
 
+.serviceDescription {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.serviceDescription span {
+  background-color: #00ccff3f;
+  font-weight: bold;
+}
 .serviceLink {
-  display: inline-block;
-  width: 100%;
+  display: block;
+  width: 98%;
   text-align: center;
-  padding: 0.3rem;
+  padding: 0.5rem;
+  margin: 0 auto;
   font-size: 1rem;
   font-weight: bold;
   color: #fff;
@@ -496,7 +531,7 @@ About
 }
 
 .profileBody {
-  padding: 20px;
+  padding: 15px;
   margin-top: 1.4rem;
   width: 100%;
 }
@@ -516,11 +551,45 @@ About
 }
 
 .profileBio {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: light;
   text-indent: 2px;
   padding: 1px;
   margin: 0.1rem auto;
+}
+
+.profileSkills {
+  display: flex;
+  align-items: baseline;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.profileSkills p {
+  margin-right: 0.6rem;
+}
+
+.profileSkillsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.profileSkillsList li {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+  padding: 3px;
+  border-radius: 5%;
+  background-color: #3b3b3b;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+
+.profileSkillsList li i {
+  margin-right: 0.1rem;
 }
 
 .profileFooter {
@@ -563,54 +632,6 @@ About
 }
 .profileFooter .fa-globe:hover {
   color: var(--website-green);
-}
-/*
----------------------------
-Skill list
----------------------------
-*/
-#skills {
-  width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  background-color: var(--bg-300);
-  box-shadow: var(--shadow-insent-G);
-}
-#skills h2 {
-  margin-bottom: 1rem;
-  text-align: center;
-}
-.skillsList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  max-width: 95%;
-  list-style-type: none;
-}
-.skill {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  margin: 0 auto;
-  padding: 0.5rem;
-  border: 1px solid var(--black-5);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  transition: 0.3s;
-}
-.skill:hover {
-  border-color: var(--primary-100);
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  transform: scale(1.1);
-  box-shadow: 0 1px 10px var(--neon-primary-color);
 }
 /*
 ---------------------------
@@ -1105,6 +1126,11 @@ Este é um comentário de exemplo
   /*scroll*/
   .scroll-down i {
     font-size: 1.5rem;
+  }
+  #scroll .scroll-down .scroll-down-text {
+    font-size: 1.2rem;
+    display: flex;
+    transition: all 0.1s ease-in-out;
   }
 }
 

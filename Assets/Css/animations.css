@@ -34,14 +34,34 @@
 }
 
 @keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
+  0%,
+  20%,
+  50%,
+  80%,
   100% {
     transform: translateY(0);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(5px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(10px);
+  }
+  60% {
+    -webkit-transform: translateY(5px);
   }
 }
 
@@ -117,41 +137,41 @@
 
 @keyframes neonBox {
   0% {
-    box-shadow: 0 0 30px var(--black-1), 0 0 5px var(--neon-primary-color);
+    box-shadow: 0 0 5px var(--neon-primary-color);
   }
   25% {
-    box-shadow: 0 0 32px var(--black-1), 0 0 10px var(--neon-primary-color);
+    box-shadow: 0 0 8px var(--neon-primary-color);
   }
   50% {
-    box-shadow: 0 0 35px var(--black-1), 0 0 20px var(--neon-primary-color);
+    box-shadow: 0 0 5px var(--neon-primary-color);
   }
   75% {
-    box-shadow: 0 0 32px var(--black-1), 0 0 10px var(--neon-primary-color);
+    box-shadow: 0 0 8px var(--neon-primary-color);
   }
   100% {
-    box-shadow: 0 0 30px var(--black-1), 0 0 5px var(--neon-primary-color);
+    box-shadow: 0 0 5px var(--neon-primary-color);
   }
 }
 
 /* Animations */
 .slideLeftAnim {
-  animation: slide-in-left 3s ease-out;
-  -webkit-animation: slide-in-left 3s ease-out;
+  animation: slide-in-left 1.5s ease-out;
+  -webkit-animation: slide-in-left 1.5s ease-out;
 }
 
 .slideLeftFast {
-  animation: slide-in-left 2s ease-in-out;
-  -webkit-animation: slide-in-left 2s ease-in-out;
+  animation: slide-in-left 1s ease-in-out;
+  -webkit-animation: slide-in-left 1s ease-in-out;
 }
 
 .slideRightAnim {
-  animation: slide-in-right 3s ease-out;
-  -webkit-animation: slide-in-right 3s ease-out;
+  animation: slide-in-right 2s ease-out;
+  -webkit-animation: slide-in-right 2s ease-out;
 }
 
 .bounceAnim {
-  animation: bounce 3s infinite;
-  -webkit-animation: bounce 3s infinite;
+  animation: bounce 4s infinite;
+  -webkit-animation: bounce 4s infinite;
 }
 
 .bounceAnimFast {
@@ -180,8 +200,8 @@
 }
 
 .neonBox {
-  animation: neonBox 3s ease-in-out infinite;
-  -webkit-animation: neonBox 3s ease-in-out infinite;
+  animation: neonBox 5s ease-in-out infinite;
+  -webkit-animation: neonBox 5s ease-in-out infinite;
 }
 
 /* Other styles... */
@@ -197,8 +217,8 @@
 }
 
 .bounceFastGlitch {
-  animation: bounce 0.9s infinite, glitch 2s ease-in-out infinite;
-  -webkit-animation: bounce 0.9s infinite, glitch 2s ease-in-out infinite;
+  animation: bounce 6s infinite, glitch 2s ease-in-out infinite;
+  -webkit-animation: bounce 6s infinite, glitch 2s ease-in-out infinite;
 }
 
 .slideLefglitchAnim {
