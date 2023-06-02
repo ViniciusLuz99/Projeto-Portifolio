@@ -1127,10 +1127,14 @@ Este é um comentário de exemplo
     font-size: 1.5rem;
   }
   #scroll .scroll-down .scroll-down-text {
-    font-size: 1.2rem;
-    display: flex;
-    transition: all 0.1s ease-in-out;
-  }
+    font-size: 0.9rem;
+    display: block;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
 }
 
 /* Estilos para desktops */
