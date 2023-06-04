@@ -656,14 +656,55 @@ Projects
 .projectList {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 2rem;
+  flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
   margin-bottom: 1.5rem;
+}
+/* Estilos adicionais para posicionar os itens anteriores e próximos */
+.owl-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 55%;
+  height: 10px;
+  margin: 10px auto;
+}
+
+.owl-prev span,
+.owl-next span {
+  font-size: 5rem;
+  color: var(--accent-100);
+}
+/* Estilo para os pontos indicadores */
+.owl-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.owl-dots .owl-dot {
+  outline: 1px solid var(--primary-100);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.owl-dots .owl-dot.active {
+  background-color: var(--accent-200);
 }
 
 /*O card em si*/
+.projectWrapper {
+  margin: 0 auto;
+  width: 90%;
+}
 .project {
   display: flex;
   flex-direction: column;
@@ -674,12 +715,16 @@ Projects
 }
 .project,
 .projectImg img,
+.projectImg video,
 .project:hover,
 .projectLinks {
   transition: 0.3s;
 }
-.project:hover .projectImg img {
+.project:hover .projectImg img,
+.project:hover .projectImg video {
   border-bottom: 3px solid transparent;
+}
+.project:hover .projectImg img{
   transform: scale(1.1);
 }
 .project:hover .projectImg {
@@ -697,7 +742,8 @@ Projects
   border-radius: 6px 6px 0 0;
 }
 
-.projectImg img {
+.projectImg img,
+.projectImg video {
   display: block;
   width: 100%;
   height: 100%;
@@ -1138,7 +1184,15 @@ Este é um comentário de exemplo
     -moz-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
-}
+  }
+
+  /*Projects*/
+  .project {
+    width: 450px;
+  }
+  .projectImg {
+    height: 300px;
+  }
 }
 
 /* Estilos para desktops */
