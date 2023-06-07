@@ -664,41 +664,6 @@ Projects
   max-width: 1000px;
   margin-bottom: 1.5rem;
 }
-/* Estilos adicionais para posicionar os itens anteriores e próximos */
-.owl-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 55%;
-  height: 10px;
-  margin: 10px auto;
-}
-
-.owl-prev span,
-.owl-next span {
-  font-size: 5rem;
-  color: var(--accent-100);
-}
-/* Estilo para os pontos indicadores */
-.owl-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.owl-dots .owl-dot {
-  outline: 1px solid var(--primary-100);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.owl-dots .owl-dot.active {
-  background-color: var(--accent-200);
-}
 
 /*O card em si*/
 .projectWrapper {
@@ -758,8 +723,13 @@ Projects
 }
 
 .projectDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10px 5px;
   text-align: center;
+  height: 180px;
   background-color: var(--bg-400);
   box-shadow: var(--shadow-insent-M);
 }

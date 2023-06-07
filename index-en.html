@@ -360,7 +360,7 @@
           <!-- Detailed project cards -->
           <div id="projects">
             <section class="projectsCard">
-              <div class="projectList owl-carousel centerAll">
+              <div class="projectList owl-carousel owl-theme centerAll">
                 <div class="projectWrapper centerAll">
                   <section class="project">
                     <div class="projectImg">
@@ -761,19 +761,6 @@
     <script src="./Assets/JS/jquery.min.js"></script>
     <!--JS Owl Carousel -->
     <script src="./Assets/JS/owl.carousel.min.js"></script>
-    <script>
-      // Inicializar o carrossel
-      $(document).ready(function () {
-        $(".projectList").owlCarousel({
-          items: 1, // Número de itens visíveis por vez
-          loop: true, // Repetir o carrossel continuamente
-          autoplay: true, // Ativar reprodução automática
-          autoplayTimeout: 3000, // Tempo de espera entre os slides (em milissegundos)
-          autoplayHoverPause: true, // Pausar a reprodução automática quando o mouse estiver sobre o carrossel
-          nav: true, // Exibir botões de navegação
-          dots: true, // Ocultar os pontos indicadores
-        });
-      });
-    </script>
+    <script src=".Assets/Js/OwlcarouselProjects.js"></script>
   </body>
 </html>

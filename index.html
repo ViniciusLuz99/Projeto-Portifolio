@@ -156,27 +156,27 @@
                 >
               </li>
               <li>
-                  <div class="dropdown">
-                    <div class="dropdownIcone">
-                      <img
-                        src="./Assets/img/icons/icons8-idioma-50.png"
-                        alt="Idioma-Icon"
-                      />
-                      <i class="fa fa-arrow-down"></i>
-                    </div>
-                    <div class="dropdownLanguage">
-                      <!-- <a href="#"
+                <div class="dropdown">
+                  <div class="dropdownIcone">
+                    <img
+                      src="./Assets/img/icons/icons8-idioma-50.png"
+                      alt="Idioma-Icon"
+                    />
+                    <i class="fa fa-arrow-down"></i>
+                  </div>
+                  <div class="dropdownLanguage">
+                    <!-- <a href="#"
                       ><img
                         src="./Assets/img/icons/icons8-brasil-48.png"
                         alt="Brazil-Icon"
                     /></a> -->
-                      <a href="index-en.html"
-                        ><img
-                          src="./Assets/img/icons/icons8-eua-48.png"
-                          alt="Eua-Icon"
-                      /></a>
-                    </div>
+                    <a href="index-en.html"
+                      ><img
+                        src="./Assets/img/icons/icons8-eua-48.png"
+                        alt="Eua-Icon"
+                    /></a>
                   </div>
+                </div>
               </li>
             </ul>
           </aside>
@@ -384,7 +384,7 @@
           <!-- Cards detalhados dos projetos em destaque -->
           <div id="projects">
             <section class="projectsCard">
-              <div class="projectList owl-carousel centerAll">
+              <div class="projectList owl-carousel owl-theme centerAll">
                 <!--aqui eo card-->
                 <div class="projectWrapper centerAll">
                   <section class="project">
@@ -782,19 +782,6 @@
     <script src="./Assets/JS/jquery.min.js"></script>
     <!--JS Owl Carousel -->
     <script src="./Assets/JS/owl.carousel.min.js"></script>
-    <script>
-      // Inicializar o carrossel
-      $(document).ready(function () {
-        $(".projectList").owlCarousel({
-          items: 1, // Número de itens visíveis por vez
-          loop: true, // Repetir o carrossel continuamente
-          autoplay: true, // Ativar reprodução automática
-          autoplayTimeout: 3000, // Tempo de espera entre os slides (em milissegundos)
-          autoplayHoverPause: true, // Pausar a reprodução automática quando o mouse estiver sobre o carrossel
-          nav: true, // Exibir botões de navegação
-          dots: true, // Ocultar os pontos indicadores
-        });
-      });
-    </script>
+    <script src=".Assets/Js/OwlcarouselProjects.js"></script>
   </body>
 </html>
