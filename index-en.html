@@ -40,19 +40,10 @@
     />
     <link rel="manifest" href="./Assets/img/favicon/site.webmanifest" />
     <!--Fonts-->
-    <!--!remover do google fonts, usar local-->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    <script
+      src="https://kit.fontawesome.com/0511b5c0e1.js"
       crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
@@ -75,6 +66,9 @@
     <link rel="stylesheet" href="./Assets/Css/styles.css" />
     <link rel="stylesheet" href="./Assets/Css/animations.css" />
     <link rel="stylesheet" href="./Assets/Css/sidePanel.css" />
+    <!-- CSS of Owl Carousel -->
+    <link rel="stylesheet" href="./Assets/Css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./Assets/Css/owl.theme.default.min.css" />
     <title>Portfolio | Vinicius Luz</title>
   </head>
   <!--Animations-->
@@ -153,6 +147,24 @@
                   <i class="fas fa-envelope"></i>
                   <strong>Contact</strong></a
                 >
+              </li>
+              <li>
+                <div class="dropdown">
+                  <div class="dropdownIcone">
+                    <img
+                      src="./Assets/img/icons/icons8-idioma-50.png"
+                      alt="Idioma-Icon"
+                    />
+                    <i class="fa fa-arrow-down"></i>
+                  </div>
+                  <div class="dropdownLanguage">
+                    <a href="index.html"
+                      ><img
+                        src="./Assets/img/icons/icons8-brasil-48.png"
+                        alt="Brazil-Icon"
+                    /></a>
+                  </div>
+                </div>
               </li>
             </ul>
           </aside>
@@ -265,9 +277,7 @@
               <p class="serviceDescription">
                 If you are looking for a motivated and dedicated front-end
                 developer,
-                <span>
-                  I am available for work opportunities</span
-                >
+                <span> I am available for work opportunities</span>
                 and excited to contribute to projects that allow me to expand my
                 experience and knowledge.
               </p>
@@ -291,14 +301,11 @@
               <h3 class="ProfileName glitchAnim">Vinicius Luz</h3>
               <p class="profileRole">Web Developer</p>
               <p class="profileBio">
-                <span
-                  >Studying📖: Analysis and Systems
-                  Development</span
-                >
+                <span>Studying📖: Analysis and Systems Development</span>
               </p>
               <p class="profileBio">
-                Passionate about technology, Synthwave, and Rock.<br> Constantly
-                seeking new opportunities to enhance my experience.
+                Passionate about technology, Synthwave, and Rock.<br />
+                Constantly seeking new opportunities to enhance my experience.
               </p>
               <div class="profileSkills">
                 <p>Skills:</p>
@@ -344,98 +351,106 @@
           <!-- Detailed project cards -->
           <div id="projects">
             <section class="projectsCard">
-              <div class="projectList">
-                <section class="project">
-                  <div class="projectImg">
-                    <img
-                      src="https://github.com/ViniciusLuz99/Projeto-XYZ-company-website-P/raw/main/.github/desktop.gif"
-                      alt="XYZ Company Website Image"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="projectDescription">
-                    <h3>XYZ Company Website</h3>
-                    <p>
-                      Landing page developed for learning purposes in HTML, CSS,
-                      and JavaScript.
-                    </p>
-                    <ul class="techList">
-                      <li><i class="devicon-html5-plain"></i></li>
-                      <li><i class="devicon-css3-plain"></i></li>
-                      <li><i class="devicon-javascript-plain"></i></li>
-                    </ul>
-                  </div>
-                  <div class="projectLinks">
-                    <a href="https://xyz-company.vercel.app/" target="_blank"
-                      >project-link</a
-                    >
-                    <a
-                      href="https://github.com/ViniciusLuz99/Projeto-XYZ-company-website-P"
-                      target="_blank"
-                      >Repository</a
-                    >
-                  </div>
-                </section>
+              <div class="projectList owl-carousel owl-theme centerAll">
+                <div class="projectWrapper centerAll">
+                  <section class="project">
+                    <div class="projectImg">
+                      <img
+                        src="./Assets/img/projects/xyz.jpg"
+                        alt="Projeto 2 Image"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="projectDescription">
+                      <h3>XYZ Company Website</h3>
+                      <p>
+                        Landing page developed for learning purposes in HTML,
+                        CSS, and JavaScript.
+                      </p>
+                      <ul class="techList">
+                        <li><i class="devicon-html5-plain"></i></li>
+                        <li><i class="devicon-css3-plain"></i></li>
+                        <li><i class="devicon-javascript-plain"></i></li>
+                      </ul>
+                    </div>
+                    <div class="projectLinks">
+                      <a href="https://xyz-company.vercel.app/" target="_blank"
+                        >project-link</a
+                      >
+                      <a
+                        href="https://github.com/ViniciusLuz99/Projeto-XYZ-company-website-P"
+                        target="_blank"
+                        >Repository</a
+                      >
+                    </div>
+                  </section>
+                </div>
                 <!---->
-                <section class="project">
-                  <div class="projectImg">
-                    <img
-                      src="https://via.placeholder.com/300"
-                      alt="Projeto 2 Image"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="projectDescription">
-                    <h3>PlaceHolder</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Odit aut vero sequi consectetur?
-                    </p>
-                    <ul class="techList">
-                      <li><i class="devicon-html5-plain"></i></li>
-                      <li><i class="devicon-css3-plain"></i></li>
-                      <li><i class="devicon-javascript-plain"></i></li>
-                    </ul>
-                  </div>
-                  <div class="projectLinks">
-                    <a href="https://linkdoprojeto2.com" target="_blank"
-                      >project-link</a
-                    >
-                    <a href="https://linkdoprojeto2.com" target="_blank"
-                      >Repository</a
-                    >
-                  </div>
-                </section>
+                <div class="projectWrapper centerAll">
+                  <section class="project">
+                    <div class="projectImg">
+                      <img
+                        src="https://via.placeholder.com/300"
+                        alt="Projeto 2 Image"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="projectDescription">
+                      <h3>PlaceHolder</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Odit aut vero sequi consectetur?
+                      </p>
+                      <ul class="techList">
+                        <li><i class="devicon-html5-plain"></i></li>
+                        <li><i class="devicon-css3-plain"></i></li>
+                        <li><i class="devicon-javascript-plain"></i></li>
+                      </ul>
+                    </div>
+                    <div class="projectLinks">
+                      <a href="https://linkdoprojeto2.com" target="_blank"
+                        >project-link</a
+                      >
+                      <a href="https://linkdoprojeto2.com" target="_blank"
+                        >Repository</a
+                      >
+                    </div>
+                  </section>
+                </div>
                 <!---->
-                <section class="project">
-                  <div class="projectImg">
-                    <img
-                      src="https://via.placeholder.com/300"
-                      alt="Projeto 2 Image"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="projectDescription">
-                    <h3>PlaceHolder</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Odit aut vero sequi consectetur?
-                    </p>
-                    <ul class="techList">
-                      <li><i class="devicon-html5-plain"></i></li>
-                      <li><i class="devicon-css3-plain"></i></li>
-                      <li><i class="devicon-javascript-plain"></i></li>
-                    </ul>
-                  </div>
-                  <div class="projectLinks">
-                    <a href="https://linkdoprojeto2.com" target="_blank"
-                      >project-link</a
-                    >
-                    <a href="https://linkdoprojeto2.com" target="_blank"
-                      >Repository</a
-                    >
-                  </div>
-                </section>
+                <div class="projectWrapper centerAll">
+                  <section class="project">
+                    <div class="projectImg">
+                      <img
+                        src="./Assets/img/projects/xyz.jpg"
+                        alt="Projeto 2 Image"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="projectDescription">
+                      <h3>XYZ Company Website</h3>
+                      <p>
+                        Landing page developed for learning purposes in HTML,
+                        CSS, and JavaScript.
+                      </p>
+                      <ul class="techList">
+                        <li><i class="devicon-html5-plain"></i></li>
+                        <li><i class="devicon-css3-plain"></i></li>
+                        <li><i class="devicon-javascript-plain"></i></li>
+                      </ul>
+                    </div>
+                    <div class="projectLinks">
+                      <a href="https://xyz-company.vercel.app/" target="_blank"
+                        >project-link</a
+                      >
+                      <a
+                        href="https://github.com/ViniciusLuz99/Projeto-XYZ-company-website-P"
+                        target="_blank"
+                        >Repository</a
+                      >
+                    </div>
+                  </section>
+                </div>
               </div>
             </section>
           </div>
@@ -732,6 +747,11 @@
     <script src="./Assets/Js/sidePanel.js" defer></script>
     <!--ScrollToTop button-->
     <script src="./Assets/Js/scrollUp.js" defer></script>
+    <!--Others-->
     <script defer src="/_vercel/insights/script.js"></script>
+    <script src="./Assets/JS/jquery.min.js"></script>
+    <!--JS Owl Carousel -->
+    <script src="./Assets/JS/owl.carousel.min.js"></script>
+    <script src="./Assets/Js/OwlcarouselProjects.js"></script>
   </body>
 </html>

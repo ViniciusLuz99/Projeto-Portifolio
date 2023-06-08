@@ -25,6 +25,13 @@
   src: url("../Fonts/Lato/Lato-Regular.ttf") format("truetype");
   font-weight: normal;
 }
+
+@font-face {
+  font-family: 'Saira';
+  src: url('../Fonts/Saira/Saira-VariableFont.ttf') format('truetype-variations');
+  font-weight: 1 1000;
+  font-named-instance: 'Regular';
+}
 /*Root*/
 :root {
   /* Cores */
@@ -164,7 +171,7 @@ a {
 .separator {
   width: 100%;
   border: 1px solid var(--bg-300);
-  box-shadow: var(--shadow-G);
+  box-shadow: var(--shadow-M);
 }
 
 /* Estilizando a barra de rolagem */
@@ -271,11 +278,11 @@ Navbar
 .navLogo a,
 .navLogo a:visited {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--text-100);
 }
 .navLogo a span {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: var(--primary-100);
   font-weight: bold;
 }
@@ -484,7 +491,7 @@ About
 #about {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: var(--bg-200);
+  background-image: linear-gradient(to bottom, var(--bg-200), #131313);
   width: 100%;
   box-shadow: var(--shadow-insent-G);
 }
@@ -507,18 +514,18 @@ About
 }
 
 .profileHeader {
-  height: 150px;
+  height: 180px;
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   /*background profile*/
-  background: url("../img/profile/retrowave-synthwave.webp") bottom center /
+  background: url("../img/profile/palm-trees-7828313_1920.jpg") bottom center /
     cover no-repeat;
   border-bottom: 1px solid var(--black-5);
   box-shadow: var(--shadow-M);
 }
 
 .profileHeader img {
-  margin: 60px 20px;
+  margin: 90px 15px;
   min-width: 150px;
   max-width: 160px;
   border-radius: 50%;
@@ -530,8 +537,8 @@ About
 }
 
 .profileBody {
-  padding: 15px;
-  margin-top: 1.4rem;
+  padding-inline: 15px;
+  margin-top: 35px;
   width: 100%;
 }
 
@@ -559,6 +566,7 @@ About
 
 .profileSkills {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   margin-top: 1rem;
   font-size: 1rem;
@@ -568,6 +576,9 @@ About
 }
 
 .profileSkillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -639,7 +650,7 @@ Projects
 */
 #projectSection {
   padding-top: 3rem;
-  background-color: var(--bg-200);
+  background-image: linear-gradient(to bottom, var(--bg-200), #131313);
   width: 100%;
   box-shadow: var(--shadow-insent-M);
 }
@@ -652,30 +663,45 @@ Projects
 .projectList {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 2rem;
+  flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
   margin-bottom: 1.5rem;
 }
 
 /*O card em si*/
+.projectWrapper {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 .project {
   display: flex;
   flex-direction: column;
   width: 350px;
-  max-width: 85%;
+  max-width: 85% ;
+  margin: 0 auto;
   padding: 0;
   border-radius: 6px;
 }
 .project,
 .projectImg img,
+.projectImg video,
 .project:hover,
 .projectLinks {
   transition: 0.3s;
 }
-.project:hover .projectImg img {
+.project:hover .projectImg img,
+.project:hover .projectImg video {
   border-bottom: 3px solid transparent;
+}
+.project:hover .projectImg img{
   transform: scale(1.1);
 }
 .project:hover .projectImg {
@@ -693,7 +719,8 @@ Projects
   border-radius: 6px 6px 0 0;
 }
 
-.projectImg img {
+.projectImg img,
+.projectImg video {
   display: block;
   width: 100%;
   height: 100%;
@@ -703,8 +730,13 @@ Projects
 }
 
 .projectDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10px 5px;
   text-align: center;
+  height: 180px;
   background-color: var(--bg-400);
   box-shadow: var(--shadow-insent-M);
 }
@@ -1134,7 +1166,15 @@ Este é um comentário de exemplo
     -moz-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
-}
+  }
+
+  /*Projects*/
+  .project {
+    width: 450px;
+  }
+  .projectImg {
+    height: 300px;
+  }
 }
 
 /* Estilos para desktops */
