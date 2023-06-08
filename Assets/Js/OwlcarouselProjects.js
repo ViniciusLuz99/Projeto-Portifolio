@@ -8,7 +8,7 @@ $(document).ready(function () {
     items: 1, // Número de itens visíveis por vez
     loop: true, // Repetir o carrossel continuamente
     autoplay: true, // Ativar reprodução automática
-    autoplayTimeout: 6000, // Tempo de espera entre os slides (em milissegundos)
+    autoplayTimeout: 5500, // Tempo de espera entre os slides (em milissegundos)
     lazyLoad: true,
     autoplayHoverPause: true,
     dots: true, // Ocultar os pontos indicadores

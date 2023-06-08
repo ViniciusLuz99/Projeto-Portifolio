@@ -171,7 +171,7 @@ a {
 .separator {
   width: 100%;
   border: 1px solid var(--bg-300);
-  box-shadow: var(--shadow-G);
+  box-shadow: var(--shadow-M);
 }
 
 /* Estilizando a barra de rolagem */
@@ -278,11 +278,11 @@ Navbar
 .navLogo a,
 .navLogo a:visited {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--text-100);
 }
 .navLogo a span {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: var(--primary-100);
   font-weight: bold;
 }
@@ -491,7 +491,7 @@ About
 #about {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: var(--bg-200);
+  background-image: linear-gradient(to bottom, var(--bg-200), #131313);
   width: 100%;
   box-shadow: var(--shadow-insent-G);
 }
@@ -650,7 +650,7 @@ Projects
 */
 #projectSection {
   padding-top: 3rem;
-  background-color: var(--bg-200);
+  background-image: linear-gradient(to bottom, var(--bg-200), #131313);
   width: 100%;
   box-shadow: var(--shadow-insent-M);
 }
