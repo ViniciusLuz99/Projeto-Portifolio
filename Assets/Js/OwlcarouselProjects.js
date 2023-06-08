@@ -1,8 +1,12 @@
 
 // Inicializar o carrossel
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
 $(document).ready(function () {
   $(".projectList").owlCarousel({
     navSpeed: 150,
+    center: true,
     animateIn: "fadeIn",
     animateOut: "fadeOut",
     items: 1, // Número de itens visíveis por vez
