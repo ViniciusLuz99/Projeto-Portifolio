@@ -1,8 +1,5 @@
 
 // Inicializar o carrossel
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});
 $(document).ready(function () {
   $(".projectList").owlCarousel({
     navSpeed: 150,
