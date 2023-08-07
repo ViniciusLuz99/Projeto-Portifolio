@@ -1,7 +1,7 @@
-const backToTopButton = document.querySelector("#BackToTop");
+const backToTopButton = document.getElementById("BackToTop");
 
-window.addEventListener("scroll", function () {
-  if (window.pageYOffset > 500) {
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 500) {
     backToTopButton.style.display = "flex";
   } else {
     backToTopButton.style.display = "none";
